@@ -1,0 +1,126 @@
+{
+    "medQ": [
+        {
+            "q": "As of January 2019, what is the record for most receptions in a playoff game by a single player?",
+            "a1": "13",
+            "a2": "14",
+            "a3": "15",
+            "a4": "16",
+            "c": "15"
+        },
+        {
+            "q": "In what year was the first Harry Potter movie released?",
+            "a1": "2000",
+            "a2": "2003",
+            "a3": "1995",
+            "a4": "2001",
+            "c": "2001"
+        },
+        {
+            "q": "The crime-based series The Wire is set in which American city?",
+            "a1": "Washington D.C.",
+            "a2": "Baltimore",
+            "a3": "Boston",
+            "a4": "Los Angeles",
+            "c": "Baltimore"
+        },
+        {
+            "q": "Which chess piece does the Lovegood House resemble?",
+            "a1": "A King",
+            "a2": "A Bishop",
+            "a3": "A Rook",
+            "a4": "A Pawn",
+            "c": "A Rook"
+        },
+        {
+            "q": "Which is the only U.S. state's capital city with not a single McDonald's fast food joint?",
+            "a1": "Montpelier, Vermont",
+            "a2": "Honolulu, Hawaii",
+            "a3": "Juneau, Alaska",
+            "a4": "Augusta, Maine",
+            "c": "Montpelier, Vermont"
+        },
+        {
+            "q": "Who was the last man to walk on the moon?",
+            "a1": "Neil Armstrong",
+            "a2": "Buzz Aldrin",
+            "a3": "David Scott",
+            "a4": "Eugene Cernan",
+            "c": "Eugene Cernan"
+        },
+        {
+            "q": "Which personality in the Bible got blinded by a bright light on his way to Damascus?",
+            "a1": "Matthias",
+            "a2": "Amos",
+            "a3": "Saul",
+            "a4": "Simon",
+            "c": "Saul"
+        },
+        {
+            "q": "Hickory trees produce which types of nuts?",
+            "a1": "Pecans",
+            "a2": "Almonds",
+            "a3": "Hazelnuts",
+            "a4": "Macadamias",
+            "c": "Pecans"
+        },
+        {
+            "q": "What cartoon character is popular in Sweden during the Christmas?",
+            "a1": "Mickey Mouse",
+            "a2": "Bugs Bunny",
+            "a3": "Donald Duck",
+            "a4": "Speedy Gonzales",
+            "c": "Donald Duck"
+        },
+        {
+            "q": "Kiwifruit are indigenous to which part of the world?",
+            "a1": "China",
+            "a2": "India",
+            "a3": "New Zealand",
+            "a4": "Peru",
+            "c": "China"
+        },
+        {
+            "q": "In which country did democracy begin?",
+            "a1": "Egypt",
+            "a2": "USA",
+            "a3": "Greece",
+            "a4": "England",
+            "c": "Greece"
+        },
+        {
+            "q": "In what year was the NERF football created?",
+            "a1": "1962",
+            "a2": "1972",
+            "a3": "1982",
+            "a4": "1992",
+            "c": "1972"
+        },
+        {
+            "q": "Which US state actually produces the most chocolate?",
+            "a1": "Pennsylvania",
+            "a2": "California",
+            "a3": "Texas",
+            "a4": "Washington",
+            "c": "Pennsylvania"
+        },
+        {
+            "q": "'Big Smooth' was the nickname of which 20th century NBA player?",
+            "a1": "Dikembe Mutombo",
+            "a2": "Kareem Abdul-Jabbar",
+            "a3": "Sam Perkins",
+            "a4": "Clyde Drexler",
+            "c": "Sam Perkins"
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "c": ""
+        }
+
+    ]
+
+}

@@ -15,12 +15,41 @@
 
 <body>
 
-    <div class="container-fluid background">
-        <div class="row">
-            <div class="col">
-                <h1></h1>
+    <div class="container-fluid">
+        <div class="row my-5">
+            <div class="col d-flex justify-content-center">
+                <h1 id="qL">Questions go here</h1>
             </div>
         </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-6 my-2">
+                    <button type="button" id="a1" class="btn btn-primary btn-lg btn-block ansBtn">Answer A</button>
+                </div>
+                <div class="col-6 my-2">
+                    <button type="button" id="a2" class="btn btn-primary btn-lg btn-block ansBtn">Answer B</button>
+                </div>
+                <div class="col-6 my-2">
+                    <button type="button" id="a3" class="btn btn-primary btn-lg btn-block ansBtn">Answer C</button>
+                </div>
+                <div class="col-6 my-2">
+                    <button type="button" id="a4" class="btn btn-primary btn-lg btn-block ansBtn">Answer D</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" id="playEZ" class="btn btn-primary btn-lg btn-block">PlayGame</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <h2>
+                    Score: <span id="score">0</span>
+                </h2>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

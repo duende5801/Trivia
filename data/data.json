@@ -135,60 +135,86 @@
             "a3": "1482",
             "a4": "1582",
             "c": "1492"
-        }
-
-    ],
-    "medQ": [
-        {
-            "q": "As of January 2019, what is the record for most receptions in a playoff game by a single player?",
-            "a1": "13",
-            "a2": "14",
-            "a3": "15",
-            "a4": "16",
-            "c": "15"
         },
         {
-            "q": "In what year was the first Harry Potter movie released?",
-            "a1": "2000",
-            "a2": "2003",
-            "a3": "1995",
-            "a4": "2001",
-            "c": "2001"
+            "q": "What is the most spoken language in the world?",
+            "a1": "English",
+            "a2": "French",
+            "a3": "Arabic",
+            "a4": "Chinese",
+            "c": "Chinese"
         },
         {
-            "q": "The crime-based series The Wire is set in which American city?",
-            "a1": "Washington D.C.",
-            "a2": "Baltimore",
-            "a3": "Boston",
-            "a4": "Los Angeles",
-            "c": "Baltimore"
+            "q": "In what US state is Area 51 located in?",
+            "a1": "Nevada",
+            "a2": "Arizona",
+            "a3": "California",
+            "a4": "Utah",
+            "c": "Nevada"
         },
         {
-            "q": "Which chess piece does the Lovegood House resemble?",
-            "a1": "A King",
-            "a2": "A Bishop",
-            "a3": "A Rook",
-            "a4": "A Pawn",
-            "c": "A Rook"
-        }
-
-    ],
-    "hrdQ": [
-        {
-            "q": "What was the highest selling album of the 1980's?",
-            "a1": "Purple Rain - Prince",
-            "a2": "Back in Black - AC/DC",
-            "a3": "The Joshua Tree - U2",
-            "a4": "Thriller - Michael Jackson",
-            "c": "Thriller - Michael Jackson"
+            "q": "What is the astronomical event the astronauts travel through in 'Interstellar'?",
+            "a1": "A black hole",
+            "a2": "A wormhole",
+            "a3": "A nova",
+            "a4": "An eclipse",
+            "c": "A wormhole"
         },
         {
-            "q": "Which television show featured an episode where one of the stars accidentally shot a boy in defense of his girlfriend?",
-            "a1": "The Wire",
-            "a2": "Miami Vice",
-            "a3": "Walker, Texas Ranger",
-            "a4": "Simon & Simon",
-            "c": "Miami Vice"
+            "q": "What type of animal is a bat?",
+            "a1": "Bird",
+            "a2": "Reptile",
+            "a3": "Mammal",
+            "a4": "Rodent",
+            "c": "Mammal"
+        },
+        {
+            "q": "Who is the lead singer of Pearl Jam?",
+            "a1": "Adam Duritz",
+            "a2": "Eddie Vedder",
+            "a3": "Johnathan Davis",
+            "a4": "Brett Anderson",
+            "c": "Eddie Vedder"
+        },
+        {
+            "q": "Polar Bears mainly feed on what animals?",
+            "a1": "Wales",
+            "a2": "Penguins",
+            "a3": "Walruses",
+            "a4": "Seals",
+            "c": "Seals"
+        },
+        {
+            "q": "What is a baby seal called?",
+            "a1": "Club",
+            "a2": "Bally",
+            "a3": "Pup",
+            "a4": "Seally",
+            "c": "Pup"
+        },
+        {
+            "q": "What was the name of the whale in the 1993 movie, 'Free Willy'?",
+            "a1": "Willy",
+            "a2": "Keiko",
+            "a3": "Swimmer",
+            "a4": "Jesse",
+            "c": "Keiko"
+        },
+        {
+            "q": "What term is used in describing a situation where a golfer scores 8 on a hole?",
+            "a1": "Worm Burner",
+            "a2": "Snowman",
+            "a3": "Fore",
+            "a4": "Double Cross",
+            "c": "Snowman"
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "c": ""
         }
 
     ]

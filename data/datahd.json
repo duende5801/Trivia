@@ -1,0 +1,133 @@
+{
+    "hrdQ": [
+        {
+            "q": "What was the highest selling album of the 1980's?",
+            "a1": "Purple Rain - Prince",
+            "a2": "Back in Black - AC/DC",
+            "a3": "The Joshua Tree - U2",
+            "a4": "Thriller - Michael Jackson",
+            "c": "Thriller - Michael Jackson"
+        },
+        {
+            "q": "Which television show featured an episode where one of the stars accidentally shot a boy in defense of his girlfriend?",
+            "a1": "The Wire",
+            "a2": "Miami Vice",
+            "a3": "Walker, Texas Ranger",
+            "a4": "Simon & Simon",
+            "c": "Miami Vice"
+        },
+        {
+            "q": "Who eliminated Rafael Nadal in the 2012 Wimbledon Tennis Championship?",
+            "a1": "Roger Federer",
+            "a2": "Andy Murray",
+            "a3": "Lukas Rosol",
+            "a4": "Novak Djokovic",
+            "c": "Lukas Rosol"
+        },
+        {
+            "q": "From the sitcom The Big Bang Theory, what is Leonard Hofstader's middle name?",
+            "a1": "Lee",
+            "a2": "Leakey",
+            "a3": "Conroy",
+            "a4": "Denharm",
+            "c": "Leakey"
+        },
+        {
+            "q": "The practice of disguisers carrying the Jack-O'-lantern during Halloween originated from which Irish myth?",
+            "a1": "Jack the Miser",
+            "a2": "Stingy Jack",
+            "a3": "Jack the Mean",
+            "a4": "Jack the Giant Slayer",
+            "c": "Stingy Jack"
+        },
+        {
+            "q": "Which NFL player later went on to become a US Supreme Court Judge?",
+            "a1": "Roger Staubach",
+            "a2": "Lynn Swann",
+            "a3": "Bill Goldberg",
+            "a4": "Byron White",
+            "c": "Byron White"
+        },
+        {
+            "q": "Saint Valentine is the patron saint of which specific disease?",
+            "a1": "Epilepsy",
+            "a2": "Gout",
+            "a3": "Leprosy",
+            "a4": "Asthma",
+            "c": "Epilepsy"
+        },
+        {
+            "q": "Which of the following farming techniques often results in the increase of pests and diseases?",
+            "a1": "Sequential Cropping",
+            "a2": "Monocropping",
+            "a3": "Intercropping",
+            "a4": "Relay Cropping",
+            "c": "Monocropping"
+        },
+        {
+            "q": "Which real-life talk-show host is a radio personality in 'Grand Theft Auto'?",
+            "a1": "Ron Jakowski",
+            "a2": "Lazlow Jones",
+            "a3": "Fernando Martinez",
+            "a4": "DJ Toni",
+            "c": "Lazlow Jones"
+        },
+        {
+            "q": "The Happiness Development Movement, which eventually led to the establishment of the International Day of Happiness, began in which year?",
+            "a1": "1972",
+            "a2": "1968",
+            "a3": "2006",
+            "a4": "2011",
+            "c": "1972"
+        },
+        {
+            "q": "Which turn-of-the-century player left the NBA, had a kidney transplant and then returned to win a championship?",
+            "a1": "Shaquille O'Neal",
+            "a2": "Antoine Walker",
+            "a3": "Alonzo Mourning",
+            "a4": "Gary Payton",
+            "c": "Alonzo Mourning"
+        },
+        {
+            "q": "What Third World product is actually a staple in the American food industry?",
+            "a1": "Cocoa Beans",
+            "a2": "Palm Oil",
+            "a3": "Gari",
+            "a4": "Coconut Oil",
+            "c": "Palm Oil"
+        },
+        {
+            "q": "What popular movie musical, directed by John Huston, was released in 1982?",
+            "a1": "Footloose",
+            "a2": "Little House of Horrors",
+            "a3": "The Blues Brothers",
+            "a4": "Annie",
+            "c": "Annie"
+        },
+        {
+            "q": "What group of animals is called a 'flink'?",
+            "a1": "12 or more cows",
+            "a2": "12 or more horses",
+            "a3": "12 or more sheep",
+            "a4": "12 or more pigs",
+            "c": "12 or more cows"
+        },
+        {
+            "q": "Which prominent British singer was declared a baron of an independent state in 2012?",
+            "a1": "David Bowie",
+            "a2": "Elton John",
+            "a3": "Ed Sheeran",
+            "a4": "Paul McCartney",
+            "c": "Ed Sheeran"
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "c": ""
+        }
+
+    ]
+}
