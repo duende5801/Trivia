@@ -21,7 +21,10 @@ function loadJSON() {
 //Play easy mode
 //grab easy mode json data
 let playEZBtn = document.getElementById('playEZ');
-playEZBtn.addEventListener('click', loadJSON());
+playEZBtn.addEventListener('click', function(e){
+    loadJSON();
+
+});
 
 //Grab all the buttons
 let a1 = document.getElementById('a1');
@@ -43,7 +46,6 @@ function loadEZQ(info) {
     ezQ = info.ezQ;
     console.log(ezQ);
     displayQuestion();
-
 }
 
 function displayQuestion() {
