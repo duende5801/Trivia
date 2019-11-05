@@ -1,0 +1,195 @@
+{
+    "ezQ": [
+        {
+            "q": "What ancient astrological event is December 25th also associated with?",
+            "a1": "Summer solstice",
+            "a2": "Winter solstice",
+            "a3": "Vernal equinox",
+            "a4": "Autumnal equinox",
+            "c": "Winter solsitce"
+        },
+        {
+            "q": "What country has the largest land mass?",
+            "a1": "Canada",
+            "a2": "China",
+            "a3": "Russia",
+            "a4": "United States",
+            "c": "Russia"
+        },
+        {
+            "q": "How many days are in a leap year?",
+            "a1": "365",
+            "a2": "200",
+            "a3": "366",
+            "a4": "355",
+            "c": "366"
+        },
+        {
+            "q": "Jim Morrison was the lead singer of which prominent 1960's rock band?",
+            "a1": "The Doors",
+            "a2": "The Beach Boys",
+            "a3": "The Beatles",
+            "a4": "The Animals",
+            "c": "The Doors"
+        },
+        {
+            "q": "The companies HP, Microsoft and Apple were all started in a what?",
+            "a1": "Office",
+            "a2": "Garage",
+            "a3": "Classroom",
+            "a4": "Boat",
+            "c": "Garage"
+        },
+        {
+            "q": "Pete Sampras is a legendary tennis player. Which nation is he from?",
+            "a1": "USA",
+            "a2": "Spain",
+            "a3": "France",
+            "a4": "Sweden",
+            "c": "USA"
+        },
+        {
+            "q": "Which sought-after snack took eight months to return to shelves after its parent company, Hostess, declared bankruptcy?",
+            "a1": "Twinkies",
+            "a2": "Brownie Bites",
+            "a3": "Ding Dongs",
+            "a4": "Fruit Pies",
+            "c": "Twinkies"
+        },
+        {
+            "q": "Which pop media icon was recently memorialized in 'World of Warcraft' in late 2018?",
+            "a1": "Aretha Franklin",
+            "a2": "Michael Jackson",
+            "a3": "Penny Marshall",
+            "a4": "Stan Lee",
+            "c": "Stan Lee"
+        },
+        {
+            "q": "What is the name of the hottest pepper in the world?",
+            "a1": "Bhut Jolokia",
+            "a2": "Trinidad Scorpion",
+            "a3": "Ghost Moccasin",
+            "a4": "Carolina Reaper",
+            "c": "Carolina Reaper"
+        },
+        {
+            "q": "In the show 'Breaking Bad', where does Walter White hide his money in his home?",
+            "a1": "Wall",
+            "a2": "Heating Duct",
+            "a3": "Under the Bed",
+            "a4": "Back Yard",
+            "c": "Heating Duct"
+        },
+        {
+            "q": "How many people in the world are right handed?",
+            "a1": "50%",
+            "a2": "75%",
+            "a3": "85%",
+            "a4": "90%",
+            "c": "85%"
+        },
+        {
+            "q": "How many US Supreme Court justices are there?",
+            "a1": "3",
+            "a2": "15",
+            "a3": "9",
+            "a4": "20",
+            "c": "9"
+        },
+        {
+            "q": "A three-day celebration triduum that involves; Halloween, All Saints Day, and All Souls Day can be referred to as?",
+            "a1": "Allhallowtide",
+            "a2": "Samhain",
+            "a3": "Festival Days",
+            "a4": "Halloween Days",
+            "c": "Allhallowtide"
+        },
+        {
+            "q": "In which continent of the world is the Sahara Desert located?",
+            "a1": "Europe",
+            "a2": "North America",
+            "a3": "Asia",
+            "a4": "Africa",
+            "c": "Africa"
+        },
+        {
+            "q": "Which NFL team's name was inspired by a famous writer?",
+            "a1": "New Orleans Saints",
+            "a2": "Baltimore Ravens",
+            "a3": "San Francisco 49ers",
+            "a4": "New York Jets",
+            "c": "Baltimore Ravens"
+        },
+        {
+            "q": "What famous actor became Governor of California in 2003?",
+            "a1": "Brad Pitt",
+            "a2": "Will Smith",
+            "a3": "Arnold Schwarzenegger",
+            "a4": "Harrison Ford",
+            "c": "Arnold Schwarzenegger"
+        },
+        {
+            "q": "In what year did Christopher Columbus discover the 'New World'?",
+            "a1": "1592",
+            "a2": "1492",
+            "a3": "1482",
+            "a4": "1582",
+            "c": "1492"
+        }
+
+    ],
+    "medQ": [
+        {
+            "q": "As of January 2019, what is the record for most receptions in a playoff game by a single player?",
+            "a1": "13",
+            "a2": "14",
+            "a3": "15",
+            "a4": "16",
+            "c": "15"
+        },
+        {
+            "q": "In what year was the first Harry Potter movie released?",
+            "a1": "2000",
+            "a2": "2003",
+            "a3": "1995",
+            "a4": "2001",
+            "c": "2001"
+        },
+        {
+            "q": "The crime-based series The Wire is set in which American city?",
+            "a1": "Washington D.C.",
+            "a2": "Baltimore",
+            "a3": "Boston",
+            "a4": "Los Angeles",
+            "c": "Baltimore"
+        },
+        {
+            "q": "Which chess piece does the Lovegood House resemble?",
+            "a1": "A King",
+            "a2": "A Bishop",
+            "a3": "A Rook",
+            "a4": "A Pawn",
+            "c": "A Rook"
+        }
+
+    ],
+    "hrdQ": [
+        {
+            "q": "What was the highest selling album of the 1980's?",
+            "a1": "Purple Rain - Prince",
+            "a2": "Back in Black - AC/DC",
+            "a3": "The Joshua Tree - U2",
+            "a4": "Thriller - Michael Jackson",
+            "c": "Thriller - Michael Jackson"
+        },
+        {
+            "q": "Which television show featured an episode where one of the stars accidentally shot a boy in defense of his girlfriend?",
+            "a1": "The Wire",
+            "a2": "Miami Vice",
+            "a3": "Walker, Texas Ranger",
+            "a4": "Simon & Simon",
+            "c": "Miami Vice"
+        }
+
+    ]
+}
