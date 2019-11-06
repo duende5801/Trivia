@@ -121,6 +121,86 @@
             "c": "Ed Sheeran"
         },
         {
+            "q": "Which former NBA player was infamously selected right before Michael Jordan in the 1984 NBA Draft?",
+            "a1": "Sam Bowie",
+            "a2": "Sam Perkins",
+            "a3": "John Stockton",
+            "a4": "Kevin Willis",
+            "c": "Sam Bowie"
+        },
+        {
+            "q": "How many championchip rings does Kobe Bryant have?",
+            "a1": "5",
+            "a2": "4",
+            "a3": "6",
+            "a4": "none",
+            "c": "5"
+        },
+        {
+            "q": "As of 2019, who is the youngest heavy weight champion?",
+            "a1": "Muhammad Ali",
+            "a2": "Evander Holyfield",
+            "a3": "Lennox Lewis",
+            "a4": "Mike Tyson",
+            "c": "Mike Tyson"
+        },
+        {
+            "q": "Who was the first African American woman to be crowned Miss America?",
+            "a1": "Halle Berry",
+            "a2": "Suzette Charles",
+            "a3": "Vanessa Williams",
+            "a4": "Erika Harold",
+            "c": "Vanessa Williams"
+        },
+        {
+            "q": "What was the name of the last game released as a physical cartridge for the Super Nintendo?",
+            "a1": "Star Fox 2",
+            "a2": "Fire Emblem: Thracia 776",
+            "a3": "Chrono Trigger",
+            "a4": "SimCity",
+            "c": "Fire Emblem: Thracia 776"
+        },
+        {
+            "q": "What planet in our solar system has the longest day?",
+            "a1": "Mars",
+            "a2": "Venus",
+            "a3": "Jupiter",
+            "a4": "Earth",
+            "c": "Venus"
+        },
+        {
+            "q": "The 'Buddha's hand' is a type of what?",
+            "a1": "Chicken Dish",
+            "a2": "Fish Dish",
+            "a3": "Fruit",
+            "a4": "Vegetable",
+            "c": "Fruit"
+        },
+        {
+            "q": "Which city is traditionally said to be built on seven hills?",
+            "a1": "Rome",
+            "a2": "London",
+            "a3": "Paris",
+            "a4": "Brussels",
+            "c": "Rome"
+        },
+        {
+            "q": "Which king on normal playing cards does not have a mustache?",
+            "a1": "King of Hearts",
+            "a2": "King of Clubs",
+            "a3": "King of Spades",
+            "a4": "King of Diamonds",
+            "c": "King of Hearts"
+        },
+        {
+            "q": "What year was the first Super Bowl played?",
+            "a1": "1967",
+            "a2": "1984",
+            "a3": "1959",
+            "a4": "1972",
+            "c": "1967"
+        },
+        {
             "q": "",
             "a1": "",
             "a2": "",
@@ -128,6 +208,7 @@
             "a4": "",
             "c": ""
         }
+
 
     ]
 }

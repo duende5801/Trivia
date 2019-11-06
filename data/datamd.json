@@ -113,13 +113,63 @@
             "c": "Sam Perkins"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "c": ""
+            "q": "In what year did Nintendo release its first game console in North America?",
+            "a1": "1982",
+            "a2": "1987",
+            "a3": "1989",
+            "a4": "1985",
+            "c": "1985"
+        },
+        {
+            "q": "How many countries are apart of NATO?",
+            "a1": "5",
+            "a2": "40",
+            "a3": "28",
+            "a4": "17",
+            "c": "28"
+        },
+        {
+            "q": "Which artist painted the famous portrait painting Mona Lisa?",
+            "a1": "Pablo Picasso",
+            "a2": "Michelangelo",
+            "a3": "Vincent van Gogh",
+            "a4": "Leonardo da Vinci",
+            "c": "Leonardo da Vinci"
+        },
+        {
+            "q": "Who sang 'I'm a Believer'?",
+            "a1": "The Monkeys",
+            "a2": "The Beetles",
+            "a3": "The Birds",
+            "a4": "The Animals",
+            "c": "The Monkeys"
+        },
+        {
+            "q": "Which hardcore-rock bad boy is known for taking ballet lessons?",
+            "a1": "Eddie Van Halen",
+            "a2": "Ozzy Osbourne",
+            "a3": "Axl Rose",
+            "a4": "Mick Jagger",
+            "c": "Mick Jagger"
+        },
+        {
+            "q": "How many countries does the United Kingdom comprise of?",
+            "a1": "3",
+            "a2": "5",
+            "a3": "4",
+            "a4": "2",
+            "c": "4"
+        },
+        {
+            "q": "What movie did Elvis Presley first appear in?",
+            "a1": "The King and I",
+            "a2": "Love Me Tender",
+            "a3": "The Wrong Man",
+            "a4": "Forbidden Planet",
+            "c": "Love Me Tender"
         }
+
+
 
     ]
 

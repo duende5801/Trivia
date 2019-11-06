@@ -209,12 +209,124 @@
             "c": "Snowman"
         },
         {
+            "q": "What NFL team's logo includes 3 different-colored 'diamonds' called hypocycloids?",
+            "a1": "Tennessee Titans",
+            "a2": "Cleveland Browns",
+            "a3": "The Pittsburgh Steelers",
+            "a4": "New England Patriots",
+            "c": "The Pittsburgh Steelers"
+        },
+        {
+            "q": "What is the capital of Germany?",
+            "a1": "London",
+            "a2": "Seoul",
+            "a3": "Berlin",
+            "a4": "Lisbon",
+            "c": "Berlin"
+        },
+        {
+            "q": "What bird is gifted to the singer on the second day in the song '12 Days of Christmas'?",
+            "a1": "Turtle dove",
+            "a2": "French hen",
+            "a3": "Swans",
+            "a4": "Partridge",
+            "c": "Turtle dove"
+        },
+        {
+            "q": "How many stripes are on the American flag?",
+            "a1": "20",
+            "a2": "13",
+            "a3": "5",
+            "a4": "32",
+            "c": "13"
+        },
+        {
+            "q": "In the movie Fight Club, where did the Narrator and Tyler Durden meet?",
+            "a1": "Aboard an airplane",
+            "a2": "At the fight club",
+            "a3": "At an AA meeting",
+            "a4": "In front of a phone booth",
+            "c": "Aboard an airplane"
+        },
+        {
+            "q": "Which band's debut album was entitled 'Appetite for Destruction'?",
+            "a1": "Guns N' Roses",
+            "a2": "AC/DC",
+            "a3": "Metallica",
+            "a4": "Nine Inch Nails",
+            "c": "Guns N' Roses"
+        },
+        {
+            "q": "What was the original flavor of the filling in Twinkies?",
+            "a1": "Strawberry",
+            "a2": "Banana Cream",
+            "a3": "Cherry",
+            "a4": "Lemon",
+            "c": "Banana Cream"
+        },
+        {
+        "q": "Who sang 'I'm Bringing Sexy Back'?",
+            "a1": "Justin Timberlake",
+            "a2": "Joey Fatone",
+            "a3": "Lance Bass",
+            "a4": "AJ",
+            "c": "Justin Timberlake"
+        },
+        {
+            "q": "Rapper Vanilla Ice had a hit song titled 'Ice Ice Baby', from which other song did 'Ice Ice Baby' sample from?",
+            "a1": "Under Pressure",
+            "a2": "Let You Down",
+            "a3": "Mary Jane",
+            "a4": "Sunshine",
+            "c": "Under Pressure"
+        },
+        {
+            "q": "What is not a primary color>",
+            "a1": "Red",
+            "a2": "Blue",
+            "a3": "Yellow",
+            "a4": "Purple",
+            "c": "Purple"
+        },
+        {
+            "q": "New York City was originally known by which Dutch name?",
+            "a1": "Cannes",
+            "a2": "Nieuw Amsterdam",
+            "a3": "Rouen",
+            "a4": "Biarritz",
+            "c": "Nieuw Amsterdam"
+        },
+        {
+            "q": "How many keys are on most baby grand pianos?",
+            "a1": "100",
+            "a2": "88",
+            "a3": "234",
+            "a4": "25",
+            "c": "88"
+        },
+        {
+            "q": " What is the Greek god of music called?",
+            "a1": "Hera",
+            "a2": "Zeus",
+            "a3": "Apollo",
+            "a4": "Athena",
+            "c": "Apollo"
+        },
+        {
+            "q": "'Saving Private Ryan' takes place during which notable event of World War II?",
+            "a1": "Invasion of Czechoslovakia",
+            "a2": "D-Day",
+            "a3": "Liberation of Rome",
+            "a4": " Battle of the Bulge",
+            "c": "D-Day"
+        },
+        {
             "q": "",
             "a1": "",
             "a2": "",
             "a3": "",
-            "a4": "",
-            "c": ""
+            "a4": "Lard",
+            "c": "Lard"
         }
 
     ]
