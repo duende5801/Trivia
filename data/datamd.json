@@ -105,7 +105,7 @@
             "c": "Pennsylvania"
         },
         {
-            "q": "'Big Smooth' was the nickname of which 20th century NBA player?",
+            "q": "\"Big Smooth\" was the nickname of which 20th century NBA player?",
             "a1": "Dikembe Mutombo",
             "a2": "Kareem Abdul-Jabbar",
             "a3": "Sam Perkins",
@@ -137,7 +137,7 @@
             "c": "Leonardo da Vinci"
         },
         {
-            "q": "Who sang 'I'm a Believer'?",
+            "q": "Who sang \"I'm a Believer\"?",
             "a1": "The Monkeys",
             "a2": "The Beetles",
             "a3": "The Birds",
@@ -167,10 +167,71 @@
             "a3": "The Wrong Man",
             "a4": "Forbidden Planet",
             "c": "Love Me Tender"
+        },
+        {
+            "q": "The late Michael Jackson is widely known as the \"King of Pop\". But who is considered the \"Queen of Pop?\"",
+            "a1": "Christina Aguilera",
+            "a2": "Liza Minnelli",
+            "a3": "Madonna",
+            "a4": "Taylor Swift",
+            "c": "Madonna"
+        },
+        {
+            "q": "What percentage of water makes up a jelly-fish?",
+            "a1": "75",
+            "a2": "85",
+            "a3": "95",
+            "a4": "97",
+            "c": "95"
+        },
+        {
+            "q": "What is Santa Claus known by in Russia?",
+            "a1": "Sinterklaas",
+            "a2": "Kriss Kringle",
+            "a3": "Kanakaloka",
+            "a4": "Grandfather Frost",
+            "c": "Grandfather Frost"
+        },
+        {
+            "q": "What is the first organisms to grow back after fire?",
+            "a1": "Mold",
+            "a2": "Moss",
+            "a3": "Grass",
+            "a4": "Trees",
+            "c": "Moss"
+        },
+        {
+            "q": "Sicily is the largest island in which sea?",
+            "a1": "Mediterranean Sea",
+            "a2": "Red Sea",
+            "a3": "Caribbean Sea",
+            "a4": "Black Sea",
+            "c": "Mediterranean Sea"
+        },
+        {
+            "q": "Which country has the most volcanoes?",
+            "a1": "USA",
+            "a2": "Russia",
+            "a3": "Indonesia",
+            "a4": "Iceland",
+            "c": "USA"
+        },
+        {
+            "q": "What was the first planet to be discovered using the telescope?",
+            "a1": "Mercury",
+            "a2": "Uranus",
+            "a3": "Venus",
+            "a4": "Mars",
+            "c": "Uranus"
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "c": ""
         }
 
-
-
     ]
-
 }

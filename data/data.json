@@ -57,7 +57,7 @@
             "c": "Twinkies"
         },
         {
-            "q": "Which pop media icon was recently memorialized in 'World of Warcraft' in late 2018?",
+            "q": "Which pop media icon was recently memorialized in \"World of Warcraft\"in late 2018?",
             "a1": "Aretha Franklin",
             "a2": "Michael Jackson",
             "a3": "Penny Marshall",
@@ -73,7 +73,7 @@
             "c": "Carolina Reaper"
         },
         {
-            "q": "In the show 'Breaking Bad', where does Walter White hide his money in his home?",
+            "q": "In the show \"Breaking Bad\", where does Walter White hide his money in his home?",
             "a1": "Wall",
             "a2": "Heating Duct",
             "a3": "Under the Bed",
@@ -129,7 +129,7 @@
             "c": "Arnold Schwarzenegger"
         },
         {
-            "q": "In what year did Christopher Columbus discover the 'New World'?",
+            "q": "In what year did Christopher Columbus discover the \"New World\"?",
             "a1": "1592",
             "a2": "1492",
             "a3": "1482",
@@ -153,7 +153,7 @@
             "c": "Nevada"
         },
         {
-            "q": "What is the astronomical event the astronauts travel through in 'Interstellar'?",
+            "q": "What is the astronomical event the astronauts travel through in \"Interstellar\"?",
             "a1": "A black hole",
             "a2": "A wormhole",
             "a3": "A nova",
@@ -193,7 +193,7 @@
             "c": "Pup"
         },
         {
-            "q": "What was the name of the whale in the 1993 movie, 'Free Willy'?",
+            "q": "What was the name of the whale in the 1993 movie, \"Free Willy\"?",
             "a1": "Willy",
             "a2": "Keiko",
             "a3": "Swimmer",
@@ -209,7 +209,7 @@
             "c": "Snowman"
         },
         {
-            "q": "What NFL team's logo includes 3 different-colored 'diamonds' called hypocycloids?",
+            "q": "What NFL team's logo includes 3 different-colored \"diamonds\" called hypocycloids?",
             "a1": "Tennessee Titans",
             "a2": "Cleveland Browns",
             "a3": "The Pittsburgh Steelers",
@@ -225,7 +225,7 @@
             "c": "Berlin"
         },
         {
-            "q": "What bird is gifted to the singer on the second day in the song '12 Days of Christmas'?",
+            "q": "What bird is gifted to the singer on the second day in the song \"12 Days of Christmas\"?",
             "a1": "Turtle dove",
             "a2": "French hen",
             "a3": "Swans",
@@ -249,7 +249,7 @@
             "c": "Aboard an airplane"
         },
         {
-            "q": "Which band's debut album was entitled 'Appetite for Destruction'?",
+            "q": "Which band's debut album was entitled \"Appetite for Destruction\"?",
             "a1": "Guns N' Roses",
             "a2": "AC/DC",
             "a3": "Metallica",
@@ -265,7 +265,7 @@
             "c": "Banana Cream"
         },
         {
-        "q": "Who sang 'I'm Bringing Sexy Back'?",
+            "q": "Who sang \"I'm Bringing Sexy Back\"?",
             "a1": "Justin Timberlake",
             "a2": "Joey Fatone",
             "a3": "Lance Bass",
@@ -273,7 +273,7 @@
             "c": "Justin Timberlake"
         },
         {
-            "q": "Rapper Vanilla Ice had a hit song titled 'Ice Ice Baby', from which other song did 'Ice Ice Baby' sample from?",
+            "q": "Rapper Vanilla Ice had a hit song titled \"Ice Ice Baby\", from which other song did \"Ice Ice Baby\" sample from?",
             "a1": "Under Pressure",
             "a2": "Let You Down",
             "a3": "Mary Jane",
@@ -281,7 +281,7 @@
             "c": "Under Pressure"
         },
         {
-            "q": "What is not a primary color>",
+            "q": "What is not a primary color?",
             "a1": "Red",
             "a2": "Blue",
             "a3": "Yellow",
@@ -313,20 +313,124 @@
             "c": "Apollo"
         },
         {
-            "q": "'Saving Private Ryan' takes place during which notable event of World War II?",
+            "q": "\"Saving Private Ryan\" takes place during which notable event of World War II?",
             "a1": "Invasion of Czechoslovakia",
             "a2": "D-Day",
             "a3": "Liberation of Rome",
-            "a4": " Battle of the Bulge",
+            "a4": "Battle of the Bulge",
             "c": "D-Day"
+        },
+        {
+            "q": "What do we call the white solid hog fat used as a lubricant in cooking?",
+            "a1": "Crisco",
+            "a2": "Shortening",
+            "a3": "Butter",
+            "a4": "Lard",
+            "c": "Lard"
+        },
+        {
+            "q": "The \"chips\" that are commonly served with fish are made out of which vegetable?",
+            "a1": "Cassava",
+            "a2": "Plantain",
+            "a3": "Yams",
+            "a4": "Potatoes",
+            "c": "Potatoes"
+        },
+        {
+            "q": "Who was the first president of the United States to live in the White House?",
+            "a1": "Abraham Linclon",
+            "a2": "George Washington",
+            "a3": "John Adams",
+            "a4": "Barack Obama",
+            "c": "John Adams"
+        },
+        {
+            "q": "Which heavy metalist is reputed to have bitten the head off of a dove?",
+            "a1": "Axl Rose",
+            "a2": "Ozzy Osbourne",
+            "a3": "Bruce Dickinson",
+            "a4": "Alice Cooper",
+            "c": "Ozzy Osbourne"
+        },
+        {
+            "q": "In the popular TV show, The Office, what did Dwight grow on his farm?",
+            "a1": "Potatoes",
+            "a2": "Carrots",
+            "a3": "Beats",
+            "a4": "Celery",
+            "c": "Beats"
+        },
+        {
+            "q": "Which \"Mortal Kombat\" character has the ability to transform into a dragon?",
+            "a1": "Noob Saibot",
+            "a2": "Johnny Cage",
+            "a3": "Sonya Blade",
+            "a4": "Liu Kang",
+            "c": "Liu Kang"
+        },
+        {
+            "q": "The Nintendo Game Boy utilized which type of display system?",
+            "a1": "Plasma",
+            "a2": "OLED",
+            "a3": "Projection",
+            "a4": "LED",
+            "c": "LED"
+        },
+        {
+            "q": "Pac-Man ghost enemies are dubbed Blinky, Pinky and Inky. What is the name of the fourth member of the crew?",
+            "a1": "Stinky",
+            "a2": "Clyde",
+            "a3": "Tim",
+            "a4": "Sue",
+            "c": "Clyde"
+        },
+        {
+            "q": "What is the capital city of the U.S. state of Hawaii?",
+            "a1": "Kailua",
+            "a2": "Makaha",
+            "a3": "Pearl City",
+            "a4": "Honolulu",
+            "c": "Honolulu"
+        },
+        {
+            "q": "Characters in videogames who cannot be outrightly controlled by players are acronymed as what?",
+            "a1": "WoWs",
+            "a2": "NPCs",
+            "a3": "MMORPGs",
+            "a4": "RPGs",
+            "c": "NPCs"
+        },
+        {
+            "q": "What are the professions of Mario and his brother Luigi?",
+            "a1": "Garbage men",
+            "a2": "Dancers",
+            "a3": "Heroes",
+            "a4": "Plumbers",
+            "c": "Plumbers"
+        },
+        {
+            "q": "Nintendo began as a company selling which products?",
+            "a1": "Playing cards",
+            "a2": "Noodles",
+            "a3": "Rice cookers",
+            "a4": "Chopsticks",
+            "c": "Playing cards"
+        },
+        {
+            "q": "What are traditionally the 12 Days of Christmas?",
+            "a1": "December 25th to January 5th",
+            "a2": "December 7th to December 25th",
+            "a3": "Black Friday to Christmas Eve",
+            "a4": "December 25th to January 7th",
+            "c": "December 25th to January 5th"
         },
         {
             "q": "",
             "a1": "",
             "a2": "",
             "a3": "",
-            "a4": "Lard",
-            "c": "Lard"
+            "a4": "",
+            "c": ""
         }
 
     ]

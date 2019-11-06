@@ -65,7 +65,7 @@
             "c": "Monocropping"
         },
         {
-            "q": "Which real-life talk-show host is a radio personality in 'Grand Theft Auto'?",
+            "q": "Which real-life talk-show host is a radio personality in \"Grand Theft Auto\"?",
             "a1": "Ron Jakowski",
             "a2": "Lazlow Jones",
             "a3": "Fernando Martinez",
@@ -105,7 +105,7 @@
             "c": "Annie"
         },
         {
-            "q": "What group of animals is called a 'flink'?",
+            "q": "What group of animals is called a \"flink\"?",
             "a1": "12 or more cows",
             "a2": "12 or more horses",
             "a3": "12 or more sheep",
@@ -169,7 +169,7 @@
             "c": "Venus"
         },
         {
-            "q": "The 'Buddha's hand' is a type of what?",
+            "q": "The \"Buddha's hand\" is a type of what?",
             "a1": "Chicken Dish",
             "a2": "Fish Dish",
             "a3": "Fruit",
@@ -201,6 +201,46 @@
             "c": "1967"
         },
         {
+            "q": "Who was the youngest player ever selected in the first round of the NFL draft?",
+            "a1": "Randy Moss",
+            "a2": "Amobi Okoye",
+            "a3": "JaMarcus Russell",
+            "a4": "Marshawn Lynch",
+            "c": "Amobi Okoye"
+        },
+        {
+            "q": "Which former dictator's son was known as an infamous prankster?",
+            "a1": "Adolf Hitler",
+            "a2": "Saddam Hussein",
+            "a3": "Fidel Castro",
+            "a4": "Muammar al-Gaddafi",
+            "c": "Saddam Hussein"
+        },
+        {
+            "q": "International Workers Day is a very-important holiday to which political party?",
+            "a1": "Communists",
+            "a2": "Democrats",
+            "a3": "Republicans",
+            "a4": "Green Party",
+            "c": "Communists"
+        },
+        {
+            "q": "What is the first element on the periodic table?",
+            "a1": "Carbon",
+            "a2": "Hydrogen",
+            "a3": "Graphite",
+            "a4": "Amorphous",
+            "c": "Hydrogen"
+        },
+        {
+            "q": "What is the largest lake in Africa?",
+            "a1": "Lake Kivu",
+            "a2": "Lake Victoria",
+            "a3": "Lake Albert",
+            "a4": "Lake Chad",
+            "c": "Lake Victoria"
+        },
+        {
             "q": "",
             "a1": "",
             "a2": "",
@@ -208,7 +248,5 @@
             "a4": "",
             "c": ""
         }
-
-
     ]
 }
