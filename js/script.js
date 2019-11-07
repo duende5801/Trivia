@@ -89,11 +89,11 @@ function loadHTML(url) {
                 menuScreenLoad(myArr);
             }
             else if (url === "../game_screen.html") {
-                if (difficulty === 1){
+                if (difficulty === 1) {
                     gameScreenLoad(myArr, triviaEZ);
-                } else if (difficulty === 2){
+                } else if (difficulty === 2) {
                     gameScreenLoad(myArr, triviaMD);
-                } else if (difficulty === 3){
+                } else if (difficulty === 3) {
                     gameScreenLoad(myArr, triviaHD);
                 }
             }
@@ -156,43 +156,34 @@ function gameScreenLoad(info, arr) {
 
     setTimeout(displayQuestion, 500);
 
-    //random Question
     let count = 0;
-
+    let triviaQ = [];
+//create an array of random questions
     function funcRandom() {
-        return Math.floor(Math.random() * 20);
-    }
-
-    function funcRandom(){
         let qNum = 0;
-        for(let i=0; i<totalQuestions; i++)
-        {
+        for (let i = 0; i < totalQuestions; i++) {
             //we are going to shuffle
-            qNum = Math.floor(Math.random()*length);
+            qNum = Math.floor(Math.random() * arr.length);
             //add from ezQ jsonarray to triviaQ
-            triviaQ.push(q.ezQ[qNum]);
+            triviaQ.push(arr[qNum]);
             //remove the item from ezQ
-            q.ezQ.splice(qNum,1);
+            arr.splice(qNum, 1);
         }
-        console.log(triviaQ);
+
     }
 
+    funcRandom();
 
     function displayQuestion() {
         //Fill in out Buttons
-        count = funcRandom();
-        q.innerText = arr[count].q;
-        a1.innerText = arr[count].a1;
-        a2.innerText = arr[count].a2;
-        a3.innerText = arr[count].a3;
-        a4.innerText = arr[count].a4;
-}
+        q.innerText = triviaQ[count].q;
+        a1.innerText = triviaQ[count].a1;
+        a2.innerText = triviaQ[count].a2;
+        a3.innerText = triviaQ[count].a3;
+        a4.innerText = triviaQ[count].a4;
+        count++
+    }
 
-
-    let startgame = document.getElementById('startgame');
-    startgame.addEventListener('click', function (e) {
-        displayQuestion();
-    });
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
         displayQuestion();
