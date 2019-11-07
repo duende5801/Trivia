@@ -1,16 +1,82 @@
 //Grab inject elements
 let inject = document.getElementById('inject');
 let g2Menu = document.getElementById('g2Menu');
+let triviaEZ = [];
+let triviaHD = [];
+let triviaMD = [];
+let difficulty = 0;
+let totalQuestions = 20;
 
+function loadJSON(url) {
+    //load our JSON Data
+    //XML HTTP-REQUEST
+
+    let xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            let myArr = JSON.parse(this.responseText);
+            myFunction(myArr.questions);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    function myFunction(arr) {
+        console.log(url);
+        if (url === "../data/data.json") {
+            for (let i = 0; i < arr.length; i++) {
+                let nFO = {
+                    "q": arr[i].q,
+                    "a1": arr[i].a1,
+                    "a2": arr[i].a2,
+                    "a3": arr[i].a3,
+                    "a4": arr[i].a4,
+                    "c": arr[i].c
+                }
+                triviaEZ.push(nFO);
+            };
+        }
+        else if (url === "../data/datamd.json") {
+            for (let i = 0; i < arr.length; i++) {
+                let nFO = {
+                    "q": arr[i].q,
+                    "a1": arr[i].a1,
+                    "a2": arr[i].a2,
+                    "a3": arr[i].a3,
+                    "a4": arr[i].a4,
+                    "c": arr[i].c
+                }
+                triviaMD.push(nFO);
+            };
+        }
+        else if (url === "../data/datahd.json") {
+            for (let i = 0; i < arr.length; i++) {
+                let nFO = {
+                    "q": arr[i].q,
+                    "a1": arr[i].a1,
+                    "a2": arr[i].a2,
+                    "a3": arr[i].a3,
+                    "a4": arr[i].a4,
+                    "c": arr[i].c
+                }
+                triviaHD.push(nFO);
+            };
+        }
+    };
+}
+
+loadJSON("../data/data.json");
+loadJSON("../data/datamd.json");
+loadJSON("../data/datahd.json");
 
 //Inject from TITLE screen to MENU screen
 g2Menu.addEventListener('click', function (e) {
     //call loadJSON to inject HTML
-    loadJSON("../menu_screen.html");
+    loadHTML("../menu_screen.html");
 });
 
-function loadJSON(url) {
-    //load our JSON Data
+function loadHTML(url) {
     //XML HTTP-REQUEST
 
     let xmlhttp = new XMLHttpRequest();
@@ -23,13 +89,16 @@ function loadJSON(url) {
                 menuScreenLoad(myArr);
             }
             else if (url === "../game_screen.html") {
-                gameScreenLoad(myArr);
+                if (difficulty === 1){
+                    gameScreenLoad(myArr, triviaEZ);
+                } else if (difficulty === 2){
+                    gameScreenLoad(myArr, triviaMD);
+                } else if (difficulty === 3){
+                    gameScreenLoad(myArr, triviaHD);
+                }
             }
             else if (url === "../options_screen.html") {
                 optionsScreenLoad(myArr);
-            }
-            else if (url === "../data.data.json") {
-                loadEZQ(myArr);
             }
 
         }
@@ -51,33 +120,25 @@ function menuScreenLoad(info) {
     let optionsScreen = document.getElementById('playOpts');
 
     playEZBtn.addEventListener('click', function (e) {
-        loadJSON("../game_screen.html");
-        loadJSON("../data.data.json");
+        loadHTML("../game_screen.html");
+        difficulty = 1;
     });
     playMedBtn.addEventListener('click', function (e) {
-        loadJSON("../game_screen.html");
-
+        loadHTML("../game_screen.html");
+        difficulty = 2;
     });
     playHrdBtn.addEventListener('click', function (e) {
-        loadJSON("../game_screen.html");
-
+        loadHTML("../game_screen.html");
+        difficulty = 3;
     });
     optionsScreen.addEventListener('click', function (e) {
-        loadJSON("../options_screen.html");
+        loadHTML("../options_screen.html");
 
     });
 }
 
-let ezQ = [];
-//Function is called inside HTTP Request
-function loadEZQ(info) {
-    //Setup our Objects for the game
-    //Moving over to questions to stop typing in info
-    ezQ = info.ezQ;
-    displayQuestion();
-}
 
-function gameScreenLoad(info) {
+function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
 
     //add in elements and event listeners
@@ -87,32 +148,51 @@ function gameScreenLoad(info) {
     let a3 = document.getElementById('a3');
     let a4 = document.getElementById('a4');
     let score = document.getElementById('score');
+    // Grab Class By Name
+    // Returns an Array of HTML Elements
+    let btns = document.getElementsByClassName('ansBtn');
+    let q = document.getElementById('qL');
+    let counter = document.getElementById('counter');
+
+    setTimeout(displayQuestion, 500);
+
+    //random Question
+    let count = 0;
+
+    function funcRandom() {
+        return Math.floor(Math.random() * 20);
+    }
+
+    function funcRandom(){
+        let qNum = 0;
+        for(let i=0; i<totalQuestions; i++)
+        {
+            //we are going to shuffle
+            qNum = Math.floor(Math.random()*length);
+            //add from ezQ jsonarray to triviaQ
+            triviaQ.push(q.ezQ[qNum]);
+            //remove the item from ezQ
+            q.ezQ.splice(qNum,1);
+        }
+        console.log(triviaQ);
+    }
+
+
+    function displayQuestion() {
+        //Fill in out Buttons
+        count = funcRandom();
+        q.innerText = arr[count].q;
+        a1.innerText = arr[count].a1;
+        a2.innerText = arr[count].a2;
+        a3.innerText = arr[count].a3;
+        a4.innerText = arr[count].a4;
+}
+
 
     let startgame = document.getElementById('startgame');
     startgame.addEventListener('click', function (e) {
         displayQuestion();
     });
-    // Grab Class By Name
-    // Returns an Array of HTML Elements
-    let btns = document.getElementsByClassName('ansBtn');
-    let disQ = document.getElementById('qL');
-    let counter = document.getElementById('counter');
-    //random Question
-    let count = 0;
-
-    function funcRandom() {
-        return Math.floor(Math.random() * ezQ.length);
-    }
-
-    function displayQuestion() {
-        //Fill in out Buttons
-        count = funcRandom();
-        disQ.innerText = ezQ[count].q;
-        a1.innerText = ezQ[count].a1;
-        a2.innerText = ezQ[count].a2;
-        a3.innerText = ezQ[count].a3;
-        a4.innerText = ezQ[count].a4;
-    }
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
         displayQuestion();
@@ -130,8 +210,20 @@ function gameScreenLoad(info) {
         displayQuestion();
     })
     function checkAnswer(string) {
-        if (string === ezQ[count].c) {
-            score.innerText++;
+        if (difficulty === 1) {
+            if (string === triviaEZ[count].c) {
+                score.innerText++;
+            }
+        }
+        else if (difficulty === 2) {
+            if (string === triviaMD[count].c) {
+                score.innerText++;
+            }
+        }
+        else if (difficulty === 3) {
+            if (string === triviaHD[count].c) {
+                score.innerText++;
+            }
         }
     }
 }
