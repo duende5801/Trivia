@@ -184,50 +184,50 @@ function gameScreenLoad(info, arr) {
         a2.innerText = triviaQ[count].a2;
         a3.innerText = triviaQ[count].a3;
         a4.innerText = triviaQ[count].a4;
-        count++
     }
 
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
         displayQuestion();
-        checkTime();
     })
     a2.addEventListener('click', function () {
         checkAnswer(a2.innerText);
         displayQuestion();
-        checkTime();
-
     })
     a3.addEventListener('click', function () {
         checkAnswer(a3.innerText);
         displayQuestion();
-        checkTime();
-
     })
     a4.addEventListener('click', function () {
         checkAnswer(a4.innerText);
         displayQuestion();
-        checkTime();
-
     })
     function checkAnswer(string) {
         if (string === triviaQ[count].c) {
             score.innerText++;
+            triviaTimer = 20;
+            count++;
+        }
+        else{
+            triviaTimer = 20;
+            count++;
         }
     }
 
     // Run our Counter / Timer
     // Create our Max Time
-    let triviaTimer = 30;
+    let triviaTimer = 20;
     //setInterval(checkTime, 1000);
 
     function checkTime() {
-        if (triviaTimer != 0) {
+        if (triviaTimer !== 0) {
             counter.innerText = triviaTimer--;
 
         }
-        else {
-            //alert("Time's Up");
+        else if(triviaTimer===0){
+            count++;
+            displayQuestion();
+            triviaTimer = 20;
         }
     }
 
