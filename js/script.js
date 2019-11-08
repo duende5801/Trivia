@@ -100,7 +100,7 @@ function loadHTML(url) {
             else if (url === "../options_screen.html") {
                 optionsScreenLoad(myArr);
             }
-            else if (url === "../game_over_screen.html"){
+            else if (url === "../game_over_screen.html") {
                 gameOverScreenLoad(myArr)
             }
 
@@ -144,6 +144,7 @@ function menuScreenLoad(info) {
 function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
     let count = 0;
+    let cannonNum = 5;
 
     //add in elements and event listeners
     //Grab all the buttons
@@ -152,6 +153,7 @@ function gameScreenLoad(info, arr) {
     let a3 = document.getElementById('a3');
     let a4 = document.getElementById('a4');
     let score = document.getElementById('score');
+    let cannonballs = document.getElementById('cannonballs');
     // Grab Class By Name
     // Returns an Array of HTML Elements
     let btns = document.getElementsByClassName('ansBtn');
@@ -181,6 +183,10 @@ function gameScreenLoad(info, arr) {
 
     function displayQuestion() {
         //Fill in out Buttons
+        a1.style.display = "block";
+        a2.style.display = "block";
+        a3.style.display = "block";
+        a4.style.display = "block";
         q.innerText = triviaQ[count].q;
         a1.innerText = triviaQ[count].a1;
         a2.innerText = triviaQ[count].a2;
@@ -214,7 +220,7 @@ function gameScreenLoad(info, arr) {
             triviaTimer = 20;
             count++;
         }
-        else{
+        else {
             triviaTimer = 20;
             count++;
         }
@@ -230,7 +236,7 @@ function gameScreenLoad(info, arr) {
             counter.innerText = triviaTimer--;
 
         }
-        else if(triviaTimer===0){
+        else if (triviaTimer === 0) {
             count++;
             checkGameOver();
             displayQuestion();
@@ -239,11 +245,30 @@ function gameScreenLoad(info, arr) {
     }
 
     function checkGameOver() {
-        if (count>19){
+        if (count > 19) {
             clearInterval(newTimer);
-            loadHTML("../game_over_screen.html");
+            setTimeout(loadHTML("../game_over_screen.html"), 500);
         }
     }
+
+    cannonballs.addEventListener('click', function (e) {
+        if (cannonNum !== 0){
+            if (a1.innerText !== triviaQ[count].c) {
+                a1.style.display = "none";
+            }
+            if (a2.innerText !== triviaQ[count].c) {
+                a2.style.display = "none";
+            }
+            if (a3.innerText !== triviaQ[count].c) {
+                a3.style.display = "none";
+            }
+            if (a4.innerText !== triviaQ[count].c) {
+                a4.style.display = "none";
+            }
+            cannonNum--
+            cannonballs.innerText = cannonNum;
+        }
+    });
 
 }
 
