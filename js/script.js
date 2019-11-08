@@ -159,7 +159,7 @@ function gameScreenLoad(info, arr) {
     let counter = document.getElementById('counter');
 
     setTimeout(displayQuestion, 500);
-    setInterval(checkTime, 1000);
+    let newTimer = setInterval(checkTime, 1000);
 
     let triviaQ = [];
     //create an array of random questions
@@ -240,6 +240,7 @@ function gameScreenLoad(info, arr) {
 
     function checkGameOver() {
         if (count>19){
+            clearInterval(newTimer);
             loadHTML("../game_over_screen.html");
         }
     }

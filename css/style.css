@@ -1,3 +1,4 @@
+
 .background-title{
     background-image: url("../images/Pirate-Theme-option2.jpeg");
     background-size: cover;
@@ -18,7 +19,7 @@ h2{
 }
 
 .background-over{
-    background-image: url(../images/pirate-theme-option3.jpg);
+    background-image: url(../images/Pirate-Theme-option2.jpeg);
     background-size: cover;
     height: 100vh;
 }
