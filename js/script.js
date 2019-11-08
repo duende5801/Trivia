@@ -100,6 +100,9 @@ function loadHTML(url) {
             else if (url === "../options_screen.html") {
                 optionsScreenLoad(myArr);
             }
+            else if (url === "../game_over_screen.html"){
+                gameOverScreenLoad(myArr)
+            }
 
         }
     };
@@ -140,6 +143,7 @@ function menuScreenLoad(info) {
 
 function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
+    let count = 0;
 
     //add in elements and event listeners
     //Grab all the buttons
@@ -157,8 +161,6 @@ function gameScreenLoad(info, arr) {
     setTimeout(displayQuestion, 500);
     setInterval(checkTime, 1000);
 
-
-    let count = 0;
     let triviaQ = [];
     //create an array of random questions
     function funcRandom() {
@@ -188,18 +190,22 @@ function gameScreenLoad(info, arr) {
 
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
+        checkGameOver();
         displayQuestion();
     })
     a2.addEventListener('click', function () {
         checkAnswer(a2.innerText);
+        checkGameOver();
         displayQuestion();
     })
     a3.addEventListener('click', function () {
         checkAnswer(a3.innerText);
+        checkGameOver();
         displayQuestion();
     })
     a4.addEventListener('click', function () {
         checkAnswer(a4.innerText);
+        checkGameOver();
         displayQuestion();
     })
     function checkAnswer(string) {
@@ -226,9 +232,20 @@ function gameScreenLoad(info, arr) {
         }
         else if(triviaTimer===0){
             count++;
+            checkGameOver();
             displayQuestion();
             triviaTimer = 20;
         }
     }
 
+    function checkGameOver() {
+        if (count>19){
+            loadHTML("../game_over_screen.html");
+        }
+    }
+
+}
+
+function gameOverScreenLoad(info) {
+    inject.innerHTML = info;
 }

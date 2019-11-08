@@ -16,3 +16,9 @@ h1{
 h2{
     color: white;
 }
+
+.background-over{
+    background-image: url(../images/pirate-theme-option3.jpg);
+    background-size: cover;
+    height: 100vh;
+}
