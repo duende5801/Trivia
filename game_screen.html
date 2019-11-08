@@ -15,8 +15,20 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row my-5">
+    <div class="container-fluid background-menu">
+        <div class="row">
+            <div class="col d-flex justify-content-start py-5">
+                <h2>
+                    Time: <span id="counter"></span>
+                </h2>
+            </div>
+            <div class="col d-flex justify-content-end py-5">
+                <h2>
+                    Score: <span id="score">0</span>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
             <div class="col d-flex justify-content-center">
                 <h1 id="qL">Questions go here</h1>
             </div>
@@ -35,13 +47,6 @@
                 <div class="col-6 my-2">
                     <button type="button" id="a4" class="btn btn-primary btn-lg btn-block ansBtn">Answer D</button>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <h2>
-                    Score: <span id="score">0</span>
-                </h2>
             </div>
         </div>
     </div>

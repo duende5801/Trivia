@@ -155,10 +155,12 @@ function gameScreenLoad(info, arr) {
     let counter = document.getElementById('counter');
 
     setTimeout(displayQuestion, 500);
+    setInterval(checkTime, 1000);
+
 
     let count = 0;
     let triviaQ = [];
-//create an array of random questions
+    //create an array of random questions
     function funcRandom() {
         let qNum = 0;
         for (let i = 0; i < totalQuestions; i++) {
@@ -171,6 +173,7 @@ function gameScreenLoad(info, arr) {
         }
 
     }
+    console.log(triviaQ);
 
     funcRandom();
 
@@ -187,35 +190,45 @@ function gameScreenLoad(info, arr) {
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
         displayQuestion();
+        checkTime();
     })
     a2.addEventListener('click', function () {
         checkAnswer(a2.innerText);
         displayQuestion();
+        checkTime();
+
     })
     a3.addEventListener('click', function () {
         checkAnswer(a3.innerText);
         displayQuestion();
+        checkTime();
+
     })
     a4.addEventListener('click', function () {
         checkAnswer(a4.innerText);
         displayQuestion();
+        checkTime();
+
     })
     function checkAnswer(string) {
-        if (difficulty === 1) {
-            if (string === triviaEZ[count].c) {
-                score.innerText++;
-            }
-        }
-        else if (difficulty === 2) {
-            if (string === triviaMD[count].c) {
-                score.innerText++;
-            }
-        }
-        else if (difficulty === 3) {
-            if (string === triviaHD[count].c) {
-                score.innerText++;
-            }
+        if (string === triviaQ[count].c) {
+            score.innerText++;
         }
     }
-}
 
+    // Run our Counter / Timer
+    // Create our Max Time
+    let triviaTimer = 30;
+    //setInterval(checkTime, 1000);
+
+    function checkTime() {
+        if (triviaTimer != 0) {
+            counter.innerText = triviaTimer--;
+
+        }
+        else {
+            //alert("Time's Up");
+        }
+    }
+
+}
