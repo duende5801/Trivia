@@ -196,23 +196,22 @@ function gameScreenLoad(info, arr) {
 
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
-        checkGameOver();
-        displayQuestion();
+        //checkGameOver();
     })
     a2.addEventListener('click', function () {
         checkAnswer(a2.innerText);
-        checkGameOver();
-        displayQuestion();
+        //checkGameOver();
+
     })
     a3.addEventListener('click', function () {
         checkAnswer(a3.innerText);
-        checkGameOver();
-        displayQuestion();
+        //checkGameOver();
+
     })
     a4.addEventListener('click', function () {
         checkAnswer(a4.innerText);
-        checkGameOver();
-        displayQuestion();
+        //checkGameOver();
+
     })
     function checkAnswer(string) {
         if (string === triviaQ[count].c) {
@@ -224,6 +223,16 @@ function gameScreenLoad(info, arr) {
             triviaTimer = 20;
             count++;
         }
+        setTimeout(() => {
+            if (count > 19) {
+                clearInterval(newTimer);
+                loadHTML("../game_over_screen.html")
+            }
+            else {
+                displayQuestion();
+            }
+        }, 500);
+
     }
 
     // Run our Counter / Timer
@@ -237,22 +246,13 @@ function gameScreenLoad(info, arr) {
 
         }
         else if (triviaTimer === 0) {
-            count++;
-            checkGameOver();
-            displayQuestion();
+            checkAnswer();
             triviaTimer = 20;
         }
     }
 
-    function checkGameOver() {
-        if (count > 19) {
-            clearInterval(newTimer);
-            setTimeout(loadHTML("../game_over_screen.html"), 500);
-        }
-    }
-
     cannonballs.addEventListener('click', function (e) {
-        if (cannonNum !== 0){
+        if (cannonNum !== 0) {
             if (a1.innerText !== triviaQ[count].c) {
                 a1.style.display = "none";
             }
@@ -269,8 +269,9 @@ function gameScreenLoad(info, arr) {
             cannonballs.innerText = cannonNum;
         }
     });
-
 }
+
+
 
 function gameOverScreenLoad(info) {
     inject.innerHTML = info;
