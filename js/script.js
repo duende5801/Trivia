@@ -48,6 +48,7 @@ function loadJSON(url) {
                     "c": arr[i].c
                 }
                 triviaMD.push(nFO);
+                console.log(triviaEZ.q)
             };
         }
         else if (url === "../data/datahd.json") {
@@ -61,6 +62,7 @@ function loadJSON(url) {
                     "c": arr[i].c
                 }
                 triviaHD.push(nFO);
+                console.log(triviaEZ.q)
             };
         }
     };
@@ -196,11 +198,15 @@ function gameScreenLoad(info, arr) {
 
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
+        //changes btn color to green
+        a1.className = "correctAnsBtns btn btn-lg btn-block ansBtn";
         checkGameOver();
         displayQuestion();
     })
     a2.addEventListener('click', function () {
         checkAnswer(a2.innerText);
+        //changes btn color to red
+        a2.className = "incorrectAnsBtns btn btn-lg btn-block ansBtn";
         checkGameOver();
         displayQuestion();
     })

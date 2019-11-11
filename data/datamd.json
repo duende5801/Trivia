@@ -225,13 +225,180 @@
             "c": "Uranus"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "c": ""
+            "q": "Which athlete has graced the cover of Sports Illustrated more than any other NFL player?",
+            "a1": "Aaron Rodgers",
+            "a2": "John Elway",
+            "a3": "Tom Brady",
+            "a4": "Bo Jackson",
+            "c": "Tom Brady"
+        },
+        {
+            "q": "When did Serena Williams win her first Wimbledon Championship?",
+            "a1": "1999",
+            "a2": "2000",
+            "a3": "2001",
+            "a4": "2002",
+            "c": "2002"
+        },
+        {
+            "q": "Who plays the charachter Dexter on the show \"Dexter\"?",
+            "a1": "Michael C. Hall",
+            "a2": "Michael Cera",
+            "a3": "Johnny Depp",
+            "a4": "Brad Pitt",
+            "c": "Michael C. Hall"
+        },
+        {
+            "q": "The original designer behind the game \"Tetris\" is from which nation?",
+            "a1": "United States",
+            "a2": "Russia",
+            "a3": "Germany",
+            "a4": "Untied Kingdom",
+            "c": "Russia"
+        },
+        {
+            "q": "What is the largest internal organ of the human body?",
+            "a1": "Lungs",
+            "a2": "Liver",
+            "a3": "Heart",
+            "a4": "Kidneys",
+            "c": "Liver"
+        },
+        {
+            "q": "Which 1990's NBA player went on to become mayor of a California city?",
+            "a1": "Shaquille O'Neal",
+            "a2": "Kevin Johnson",
+            "a3": "Charles Barkley",
+            "a4": "Clyde Drexler",
+            "c": "Kevin Johnson"
+        },
+        {
+            "q": "What breed of dog is most popular in the United States?",
+            "a1": "Labrador Retriever",
+            "a2": "Boxer",
+            "a3": "Pit Bull",
+            "a4": "Chiwawa",
+            "c": "Labrador Retriever"
+        },
+        {
+            "q": "In what state is the Pro Football Hall of Fame located?",
+            "a1": "New York",
+            "a2": "Illinois",
+            "a3": "New Jersey",
+            "a4": "Ohio",
+            "c": "Ohio"
+        },
+        {
+            "q": "The Dingo is a free range dog found mainly in which country?",
+            "a1": "Brazil",
+            "a2": "Japan",
+            "a3": "Australia",
+            "a4": "Europe",
+            "c": "Australia"
+        },
+        {
+            "q": "What is the name of the highest mountain on Earth?",
+            "a1": "Mount Fuji",
+            "a2": "Mount Everest",
+            "a3": "Mount Kilimanjaro",
+            "a4": "Mount Olympus",
+            "c": "Mount Everest"
+        },
+        {
+            "q": "How much can an ant lift?",
+            "a1": "10 times its own weight",
+            "a2": "20 times its own weight",
+            "a3": "50 times its own weight",
+            "a4": "100 times its own weight",
+            "c": "50 times its own weight"
+        },
+        {
+            "q": "How many edges does a cube have?",
+            "a1": "4",
+            "a2": "6",
+            "a3": "8",
+            "a4": "12",
+            "c": "12"
+        },
+        {
+            "q": "What food is Hummus made from?",
+            "a1": "Chickpeas",
+            "a2": "Kidney Beans",
+            "a3": "Pinto Beans",
+            "a4": "Broad Beans",
+            "c": "Chickpeas"
+        },
+        {
+            "q": "What is the object that opposing players must destroy in order to win at \"League of Legends\"?",
+            "a1": "Nexus",
+            "a2": "Inhibitor",
+            "a3": "Power Core",
+            "a4": "Fire Flower",
+            "c": "Nexus"
+        },
+        {
+            "q": "Which NBA star faced a 15-year prison yet was granted clemency after only four months?",
+            "a1": "Allen Iverson",
+            "a2": "Dennis Rodman",
+            "a3": "Karl Malone",
+            "a4": "Magic Johnson",
+            "c": "Allen Iverson"
+        },
+        {
+            "q": "Which popular singer is affectionately referred to as \"the Boss\"?",
+            "a1": "Michael Jackson",
+            "a2": "Bruce Springsteen",
+            "a3": "David Hasselhoff",
+            "a4": "James Brown",
+            "c": "Bruce Springsteen"
+        },
+        {
+            "q": "Which bone is the longest bone in the human body?",
+            "a1": "Sternum",
+            "a2": "Femur",
+            "a3": "Innominate",
+            "a4": "Tibia",
+            "c": "Femur"
+        },
+        {
+            "q": "Who is the only athlete ever to play in a Super Bowl and a World Series?",
+            "a1": "Peyton Manning",
+            "a2": "Tom Brady",
+            "a3": "Deion Sanders",
+            "a4": "Kyler Murray",
+            "c": "Deion Sanders"
+        },
+        {
+            "q": "How long did it take Markus Persson to create the first version of \"Minecraft\"?",
+            "a1": "One week",
+            "a2": "One month",
+            "a3": "One year",
+            "a4": "Five years",
+            "c": "One week"
+        },
+        {
+            "q": "Which U.S. state depends most on tourism?",
+            "a1": "Colorado",
+            "a2": "Navada",
+            "a3": "Alaska",
+            "a4": "Montana",
+            "c": "Navada"
+        },
+        {
+            "q": "I what year did \"Nacho Libre\" come out",
+            "a1": "2005",
+            "a2": "2006",
+            "a3": "2008",
+            "a4": "2010",
+            "c": "2006"
+        },
+        {
+            "q": "In what year was the declaration of independence signed?",
+            "a1": "1777",
+            "a2": "1767",
+            "a3": "1812",
+            "a4": "1776",
+            "c": "1767"
         }
-
     ]
 }
