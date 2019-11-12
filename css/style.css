@@ -49,15 +49,21 @@ h3{
     font-family: 'Pirata One', cursive;
 
 }
-h5{
+.modal-title{
+    font-family: 'Pirata One', cursive;
+    font-size: x-large;
+}
+#qL{
+    color: white;
     font-family: 'Pirata One', cursive;
 }
 .modal-body{
     font-family: 'Pirata One', cursive;
+    font-size: x-large;
 }
 
 .background-win{
-    background-image: url(../images/Pirate-Theme-option2.jpeg);
+    background-image: url(../images/win-screen.jpg);
     background-size: cover;
     height: 100vh;
 }

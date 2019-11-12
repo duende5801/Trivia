@@ -152,8 +152,9 @@ function optionsScreenLoad (info) {
     let music = document.getElementById('music');
     let back = document.getElementById('back');
 
-    music.addEventListener('click', function(e){
-
+    music.addEventListener('click', function(){
+        let audio = new Audio('../sound/song.mp3');
+        audio.play();
     });
 
     back.addEventListener('click', function (e){
@@ -166,6 +167,7 @@ function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
     let count = 0;
     let cannonNum = 5;
+    let scoreCheck = 0;
 
     //add in elements and event listeners
     //Grab all the buttons
@@ -237,6 +239,7 @@ function gameScreenLoad(info, arr) {
     function checkAnswer(string) {
         if (string === triviaQ[count].c) {
             score.innerText++;
+            scoreCheck++;
             triviaTimer = 20;
             count++;
         }
@@ -245,9 +248,13 @@ function gameScreenLoad(info, arr) {
             count++;
         }
         setTimeout(() => {
-            if (count > 19) {
+            if (count > 19 && scoreCheck > 13) {
                 clearInterval(newTimer);
                 loadHTML("../game_over_screen.html")
+            }
+            else if (count > 19 && scoreCheck <= 13){
+                clearInterval(newTimer);
+                loadHTML("../lose_game_over_screen.html")
             }
             else {
                 displayQuestion();
