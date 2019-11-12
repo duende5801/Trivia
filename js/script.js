@@ -162,10 +162,21 @@ function optionsScreenLoad(info) {
 
     let music = document.getElementById('music');
     let back = document.getElementById('back');
+    let audio = new Audio('../sound/song.mp3');
+    let firstClicked = true;
+
 
     music.addEventListener('click', function () {
-        let audio = new Audio('../sound/song.mp3');
-        audio.play();
+
+        if (firstClicked){
+            audio.play();
+            firstClicked=false;
+        }
+        else{
+            audio.pause();
+            audio.currentTime = 0;
+            firstClicked = true;
+        }
     });
 
     back.addEventListener('click', function (e) {
@@ -189,6 +200,11 @@ function gameScreenLoad(info, arr) {
     let score = document.getElementById('score');
     let cannonballs = document.getElementById('cannonballs');
     let dynBtn = document.getElementsByClassName('dynBtn');
+    let dyn1 = document.getElementById('dyn1');
+    let dyn2 = document.getElementById('dyn2');
+    let dyn3 = document.getElementById('dyn3');
+    let dyn4 = document.getElementById('dyn4');
+    let dyn5 = document.getElementById('dyn5');
 
     // Grab Class By Name
     // Returns an Array of HTML Elements
@@ -196,7 +212,6 @@ function gameScreenLoad(info, arr) {
     let q = document.getElementById('qL');
     let counter = document.getElementById('counter');
 
-    //dynamite.className="list-group-item dynamite5 py-5"
 
     setTimeout(displayQuestion, 500);
     let newTimer = setInterval(checkTime, 1000);
@@ -294,24 +309,82 @@ function gameScreenLoad(info, arr) {
         }
     }
 
-    cannonballs.addEventListener('click', function (e) {
-        if (cannonNum !== 0) {
-            if (a1.innerText !== triviaQ[count].c) {
-                a1.style.display = "none";
-            }
-            if (a2.innerText !== triviaQ[count].c) {
-                a2.style.display = "none";
-            }
-            if (a3.innerText !== triviaQ[count].c) {
-                a3.style.display = "none";
-            }
-            if (a4.innerText !== triviaQ[count].c) {
-                a4.style.display = "none";
-            }
-            cannonNum--
-            cannonballs.innerText = cannonNum;
+    dyn1.addEventListener('click', function (e){
+        if (a1.innerText !== triviaQ[count].c) {
+            a1.style.display = "none";
         }
+        if (a2.innerText !== triviaQ[count].c) {
+            a2.style.display = "none";
+        }
+        if (a3.innerText !== triviaQ[count].c) {
+            a3.style.display = "none";
+        }
+        if (a4.innerText !== triviaQ[count].c) {
+            a4.style.display = "none";
+        }
+        dyn1.style.display = "none";
     });
+    dyn2.addEventListener('click', function (e){
+        if (a1.innerText !== triviaQ[count].c) {
+            a1.style.display = "none";
+        }
+        if (a2.innerText !== triviaQ[count].c) {
+            a2.style.display = "none";
+        }
+        if (a3.innerText !== triviaQ[count].c) {
+            a3.style.display = "none";
+        }
+        if (a4.innerText !== triviaQ[count].c) {
+            a4.style.display = "none";
+        }
+        dyn2.style.display = "none";
+    });
+    dyn3.addEventListener('click', function (e){
+        if (a1.innerText !== triviaQ[count].c) {
+            a1.style.display = "none";
+        }
+        if (a2.innerText !== triviaQ[count].c) {
+            a2.style.display = "none";
+        }
+        if (a3.innerText !== triviaQ[count].c) {
+            a3.style.display = "none";
+        }
+        if (a4.innerText !== triviaQ[count].c) {
+            a4.style.display = "none";
+        }
+        dyn3.style.display = "none";
+    });
+    dyn4.addEventListener('click', function (e){
+        if (a1.innerText !== triviaQ[count].c) {
+            a1.style.display = "none";
+        }
+        if (a2.innerText !== triviaQ[count].c) {
+            a2.style.display = "none";
+        }
+        if (a3.innerText !== triviaQ[count].c) {
+            a3.style.display = "none";
+        }
+        if (a4.innerText !== triviaQ[count].c) {
+            a4.style.display = "none";
+        }
+        dyn4.style.display = "none";
+    });
+    dyn5.addEventListener('click', function (e){
+        if (a1.innerText !== triviaQ[count].c) {
+            a1.style.display = "none";
+        }
+        if (a2.innerText !== triviaQ[count].c) {
+            a2.style.display = "none";
+        }
+        if (a3.innerText !== triviaQ[count].c) {
+            a3.style.display = "none";
+        }
+        if (a4.innerText !== triviaQ[count].c) {
+            a4.style.display = "none";
+        }
+        dyn5.style.display = "none";
+    });
+
 }
 
 function gameOverScreenLoad(info) {
