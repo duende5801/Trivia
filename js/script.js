@@ -79,11 +79,11 @@ function titleLoad(info) {
     //Inject from TITLE screen to MENU screen
     g2Menu.addEventListener('click', function (e) {
         //call loadJSON to inject HTML
-        loadHTML("../menu_screen.html");
+        loadHTML("../injections/menu_screen.html");
     });
 }
 
-window.onload = loadHTML("../title_page.html");
+window.onload = loadHTML("../injections/title_page.html");
 
 
 function loadHTML(url) {
@@ -95,10 +95,10 @@ function loadHTML(url) {
         if (this.readyState == 4 && this.status == 200) {
             let myArr = this.responseText;//JSON.parse(this.responseText);
             console.log(myArr);
-            if (url === "../menu_screen.html") {
+            if (url === "../injections/menu_screen.html") {
                 menuScreenLoad(myArr);
             }
-            else if (url === "../game_screen.html") {
+            else if (url === "../injections/game_screen.html") {
                 if (difficulty === 1) {
                     gameScreenLoad(myArr, triviaEZ);
                 } else if (difficulty === 2) {
@@ -107,16 +107,16 @@ function loadHTML(url) {
                     gameScreenLoad(myArr, triviaHD);
                 }
             }
-            else if (url === "../options_screen.html") {
+            else if (url === "../injections/options_screen.html") {
                 optionsScreenLoad(myArr);
             }
-            else if (url === "../game_over_screen.html") {
+            else if (url === "../injections/game_over_screen.html") {
                 gameOverScreenLoad(myArr)
             }
-            else if (url === "../lose_game_over_screen.html") {
+            else if (url === "../injections/lose_game_over_screen.html") {
                 gameLoseScreenLoad(myArr)
             }
-            else if (url === "../title_page.html") {
+            else if (url === "../injections/title_page.html") {
                 titleLoad(myArr)
             }
 
@@ -139,19 +139,19 @@ function menuScreenLoad(info) {
     let optionsScreen = document.getElementById('playOpts');
 
     playEZBtn.addEventListener('click', function (e) {
-        loadHTML("../game_screen.html");
+        loadHTML("../injections/game_screen.html");
         difficulty = 1;
     });
     playMedBtn.addEventListener('click', function (e) {
-        loadHTML("../game_screen.html");
+        loadHTML("../injections/game_screen.html");
         difficulty = 2;
     });
     playHrdBtn.addEventListener('click', function (e) {
-        loadHTML("../game_screen.html");
+        loadHTML("../injections/game_screen.html");
         difficulty = 3;
     });
     optionsScreen.addEventListener('click', function (e) {
-        loadHTML("../options_screen.html");
+        loadHTML("../injections/options_screen.html");
 
     });
 }
@@ -169,7 +169,7 @@ function optionsScreenLoad(info) {
     });
 
     back.addEventListener('click', function (e) {
-        loadHTML("../menu_screen.html")
+        loadHTML("../injections/menu_screen.html")
     })
 }
 
@@ -188,11 +188,15 @@ function gameScreenLoad(info, arr) {
     let a4 = document.getElementById('a4');
     let score = document.getElementById('score');
     let cannonballs = document.getElementById('cannonballs');
+    let dynBtn = document.getElementsByClassName('dynBtn');
+
     // Grab Class By Name
     // Returns an Array of HTML Elements
     let btns = document.getElementsByClassName('ansBtn');
     let q = document.getElementById('qL');
     let counter = document.getElementById('counter');
+
+    //dynamite.className="list-group-item dynamite5 py-5"
 
     setTimeout(displayQuestion, 500);
     let newTimer = setInterval(checkTime, 1000);
@@ -261,11 +265,11 @@ function gameScreenLoad(info, arr) {
         setTimeout(() => {
             if (count > 19 && scoreCheck > 13) {
                 clearInterval(newTimer);
-                loadHTML("../game_over_screen.html")
+                loadHTML("../injections/game_over_screen.html")
             }
             else if (count > 19 && scoreCheck <= 13) {
                 clearInterval(newTimer);
-                loadHTML("../lose_game_over_screen.html")
+                loadHTML("../injections/lose_game_over_screen.html")
             }
             else {
                 displayQuestion();
@@ -315,7 +319,7 @@ function gameOverScreenLoad(info) {
     let toTitle = document.getElementById('toTitle');
 
     toTitle.addEventListener('click', function (e) {
-        loadHTML("../title_page.html");
+        loadHTML("../injections/title_page.html");
     })
 }
 function gameLoseScreenLoad(info) {

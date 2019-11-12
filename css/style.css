@@ -85,3 +85,6 @@ h3{
     letter-spacing: 5px;
     color: white;
 }
+.no-padding .col {
+    padding : 0;
+}
