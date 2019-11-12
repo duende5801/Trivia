@@ -105,6 +105,9 @@ function loadHTML(url) {
             else if (url === "../game_over_screen.html") {
                 gameOverScreenLoad(myArr)
             }
+            else if (url === "../lose_game_over_screen.html") {
+                gameLoseScreenLoad(myArr)
+            }
 
         }
     };
@@ -253,7 +256,7 @@ function gameScreenLoad(info, arr) {
     function checkGameOver() {
         if (count > 19) {
             clearInterval(newTimer);
-            setTimeout(loadHTML("../game_over_screen.html"), 500);
+            setTimeout(loadHTML("../lose_game_over_screen.html"), 500);
         }
     }
 
@@ -279,5 +282,8 @@ function gameScreenLoad(info, arr) {
 }
 
 function gameOverScreenLoad(info) {
+    inject.innerHTML = info;
+}
+function gameLoseScreenLoad(info) {
     inject.innerHTML = info;
 }
