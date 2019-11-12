@@ -21,6 +21,12 @@
     background-image: url("../images/options-screen.jpg");
     background-size: cover;
     height: 100vh;
+    position: relative;
+}
+.go-back{
+    position: absolute;
+    top: 30px;
+    left: 20px;
 }
 .incorrectAnsBtns{
     background-color: #f44336;
@@ -37,6 +43,16 @@ h1{
 }
 h2{
     color: white;
+    font-family: 'Pirata One', cursive;
+}
+h3{
+    font-family: 'Pirata One', cursive;
+
+}
+h5{
+    font-family: 'Pirata One', cursive;
+}
+.modal-body{
     font-family: 'Pirata One', cursive;
 }
 

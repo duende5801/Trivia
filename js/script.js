@@ -145,6 +145,22 @@ function menuScreenLoad(info) {
     });
 }
 
+function optionsScreenLoad (info) {
+    //going to load the options screen html elements and click events
+    inject.innerHTML = info;
+
+    let music = document.getElementById('music');
+    let back = document.getElementById('back');
+
+    music.addEventListener('click', function(e){
+
+    });
+
+    back.addEventListener('click', function (e){
+        loadHTML("../menu_screen.html")
+    })
+}
+
 
 function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
