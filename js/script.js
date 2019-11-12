@@ -1,6 +1,5 @@
 //Grab inject elements
 let inject = document.getElementById('inject');
-let g2Menu = document.getElementById('g2Menu');
 let triviaEZ = [];
 let triviaHD = [];
 let triviaMD = [];
@@ -72,11 +71,20 @@ loadJSON("../data/data.json");
 loadJSON("../data/datamd.json");
 loadJSON("../data/datahd.json");
 
-//Inject from TITLE screen to MENU screen
-g2Menu.addEventListener('click', function (e) {
-    //call loadJSON to inject HTML
-    loadHTML("../menu_screen.html");
-});
+
+function titleLoad(info) {
+    inject.innerHTML = info;
+    let g2Menu = document.getElementById('g2Menu');
+
+    //Inject from TITLE screen to MENU screen
+    g2Menu.addEventListener('click', function (e) {
+        //call loadJSON to inject HTML
+        loadHTML("../menu_screen.html");
+    });
+}
+
+window.onload = loadHTML("../title_page.html");
+
 
 function loadHTML(url) {
     //XML HTTP-REQUEST
@@ -107,6 +115,9 @@ function loadHTML(url) {
             }
             else if (url === "../lose_game_over_screen.html") {
                 gameLoseScreenLoad(myArr)
+            }
+            else if (url === "../title_page.html") {
+                titleLoad(myArr)
             }
 
         }
@@ -145,19 +156,19 @@ function menuScreenLoad(info) {
     });
 }
 
-function optionsScreenLoad (info) {
+function optionsScreenLoad(info) {
     //going to load the options screen html elements and click events
     inject.innerHTML = info;
 
     let music = document.getElementById('music');
     let back = document.getElementById('back');
 
-    music.addEventListener('click', function(){
+    music.addEventListener('click', function () {
         let audio = new Audio('../sound/song.mp3');
         audio.play();
     });
 
-    back.addEventListener('click', function (e){
+    back.addEventListener('click', function (e) {
         loadHTML("../menu_screen.html")
     })
 }
@@ -252,7 +263,7 @@ function gameScreenLoad(info, arr) {
                 clearInterval(newTimer);
                 loadHTML("../game_over_screen.html")
             }
-            else if (count > 19 && scoreCheck <= 13){
+            else if (count > 19 && scoreCheck <= 13) {
                 clearInterval(newTimer);
                 loadHTML("../lose_game_over_screen.html")
             }
@@ -299,11 +310,15 @@ function gameScreenLoad(info, arr) {
     });
 }
 
-
-
 function gameOverScreenLoad(info) {
     inject.innerHTML = info;
+    let toTitle = document.getElementById('toTitle');
+
+    toTitle.addEventListener('click', function (e) {
+        loadHTML("../title_page.html");
+    })
 }
 function gameLoseScreenLoad(info) {
     inject.innerHTML = info;
 }
+
