@@ -425,12 +425,12 @@
             "c": "December 25th to January 5th"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "c": ""
+            "q": "What is a meteor called when it reaches Earth's surface?",
+            "a1": "Comet",
+            "a2": "Meteorite",
+            "a3": "Asteroid",
+            "a4": "Rock",
+            "c": "Meteorite"
         }
 
     ]

@@ -48,6 +48,7 @@ function loadJSON(url) {
                     "c": arr[i].c
                 }
                 triviaMD.push(nFO);
+                console.log(triviaEZ.q)
             };
         }
         else if (url === "../data/datahd.json") {
@@ -61,6 +62,7 @@ function loadJSON(url) {
                     "c": arr[i].c
                 }
                 triviaHD.push(nFO);
+                console.log(triviaEZ.q)
             };
         }
     };
@@ -103,6 +105,9 @@ function loadHTML(url) {
             else if (url === "../game_over_screen.html") {
                 gameOverScreenLoad(myArr)
             }
+            else if (url === "../lose_game_over_screen.html") {
+                gameLoseScreenLoad(myArr)
+            }
 
         }
     };
@@ -138,6 +143,22 @@ function menuScreenLoad(info) {
         loadHTML("../options_screen.html");
 
     });
+}
+
+function optionsScreenLoad (info) {
+    //going to load the options screen html elements and click events
+    inject.innerHTML = info;
+
+    let music = document.getElementById('music');
+    let back = document.getElementById('back');
+
+    music.addEventListener('click', function(e){
+
+    });
+
+    back.addEventListener('click', function (e){
+        loadHTML("../menu_screen.html")
+    })
 }
 
 
@@ -274,5 +295,8 @@ function gameScreenLoad(info, arr) {
 
 
 function gameOverScreenLoad(info) {
+    inject.innerHTML = info;
+}
+function gameLoseScreenLoad(info) {
     inject.innerHTML = info;
 }

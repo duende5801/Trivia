@@ -241,12 +241,164 @@
             "c": "Lake Victoria"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "c": ""
+            "q": "Fun-loving NBA personality Shaquille O'Neal is actually a doctor! In what field did he earn a doctorate?",
+            "a1": "Kinesiology",
+            "a2": "Information Technology",
+            "a3": "Clinical Nutrition",
+            "a4": "Education",
+            "c": "Education"
+        },
+        {
+            "q": "During which year was cocaine finally removed as an ingredient in Coca Cola?",
+            "a1": "1885",
+            "a2": "1921",
+            "a3": "1929",
+            "a4": "1935",
+            "c": "1935"
+        },
+        {
+            "q": "The theory that Earth's outer shell is divided into gliding plates over the mantle is know as what?",
+            "a1": "Separation",
+            "a2": "Plate Tectonics",
+            "a3": "Plate shift",
+            "a4": "Shell cracks",
+            "c": "Plate Tectonics"
+        },
+        {
+            "q": "What major global event serves as the background setting for \"The Green Mile\"?",
+            "a1": "World War II",
+            "a2": "The Great Depression",
+            "a3": "The Vietnam War",
+            "a4": "The Slave Trade",
+            "c": "The Great Depression"
+        },
+        {
+            "q": "Comedian Chris Rock voiced a popular character based on which NBA player during the 1990's?",
+            "a1": "Michael Jordan",
+            "a2": "Anfernee Hardaway",
+            "a3": "Grant Hill",
+            "a4": "Charles Barkley",
+            "c": "Anfernee Hardaway"
+        },
+        {
+            "q": "What is the name of the primary system used to rate videogame content in Israel?",
+            "a1": "Classification Review Board",
+            "a2": "Ethics Organization of Computer Software",
+            "a3": "Pan European Game Information",
+            "a4": "Entertainment Software Rating Board",
+            "c": "Pan European Game Information"
+        },
+        {
+            "q": "Which NBA player once costarred alongside Jean-Claude Van Damme in the movie Double Team?",
+            "a1": "Shaquille O'Neal",
+            "a2": "Dennis Rodman",
+            "a3": "Kareem Abdul-Jabbar",
+            "a4": "Michael Jordan",
+            "c": "Dennis Rodman"
+        },
+        {
+            "q": "How fast can a honey bee fly?",
+            "a1": "10 MPH",
+            "a2": "5 MPH",
+            "a3": "30 MPH",
+            "a4": "15 MPH",
+            "c": "15 MPH"
+        },
+        {
+            "q": "What is the largest city to connect two continents?",
+            "a1": "Panama City",
+            "a2": "Istanbul",
+            "a3": "Berlin",
+            "a4": "Belfast",
+            "c": "Istanbul"
+        },
+        {
+            "q": "In what year was the first female referee ever featured in an NFL game?",
+            "a1": "2002",
+            "a2": "2005",
+            "a3": "2012",
+            "a4": "2015",
+            "c": "2012"
+        },
+        {
+            "q": "In what year was the blue M&M introduced?",
+            "a1": "1990",
+            "a2": "1986",
+            "a3": "2000",
+            "a4": "1995",
+            "c": "1995"
+        },
+        {
+            "q": " What is the least-densely populated country on the planet?",
+            "a1": "Namibia",
+            "a2": "Mongolia",
+            "a3": "Pitcairn Islands",
+            "a4": "Greenland",
+            "c": "Greenland"
+        },
+        {
+            "q": "What is the only graphic novel to have won a Pulitzer Prize?",
+            "a1": "Maus",
+            "a2": "Watchmen",
+            "a3": "Sandman",
+            "a4": "Preacher",
+            "c": "Maus"
+        },
+        {
+            "q": "Lamb Chop is a puppet that was famously controlled by what ventriloquist?",
+            "a1": "Carol Channing",
+            "a2": "Darci Lynne",
+            "a3": "Nina Conti",
+            "a4": "Shari Lewis",
+            "c": "Shari Lewis"
+        },
+        {
+            "q": "In the Back to the Future series, what family owns a vehicle dealership in every iteration of Hill Valley, selling \"Fine Horses\" in 1885, \"Studebakers\" in 1955 and \"Pontiacs\" in 2015?",
+            "a1": "The Statlers",
+            "a2": "The Tannens",
+            "a3": "The Browns",
+            "a4": "The Stricklands",
+            "c": "The Statlers"
+        },
+        {
+            "q": "What was the name of Andy Warhol’s studio in New York City?",
+            "a1": "The Sitting Room",
+            "a2": "The Factory",
+            "a3": "Art Center Manatee",
+            "a4": "High Tide Gallery",
+            "c": "The Factory"
+        },
+        {
+            "q": "What is the only band that has played a show on all seven continents, including an intimate 2013 concert in Antarctica attended by 120 scientists and contest winners?",
+            "a1": "Pink Floyd",
+            "a2": "U2",
+            "a3": "Metallica",
+            "a4": "Nervana",
+            "c": "Metallica"
+        },
+        {
+            "q": "Where was Gordan Ramsey born?",
+            "a1": "Wales",
+            "a2": "Edinburgh",
+            "a3": "Glasgow",
+            "a4": "Scotland",
+            "c": "Scotland"
+        },
+        {
+            "q": "What was Jad Clampett's catchphrase on the Beverly Hillbillies?",
+            "a1": "\"Welllllll, doggies!\"",
+            "a2": "\"Get along little doggies!\"",
+            "a3": "\"Oooooo, baby!\"",
+            "a4": "\"Get dem ponies!\"",
+            "c": "\"Welllllll, doggies!\""
+        },
+        {
+            "q": "Which band does the folk singer Bob Dylan's son belong to?",
+            "a1": "\"R.E.M.\"",
+            "a2": "\"Bare Naked Ladies\"",
+            "a3": "\"Counting Crows\"",
+            "a4": "\"The Wallflowers\"",
+            "c": "\"The Wallflowers\""
         }
     ]
 }
