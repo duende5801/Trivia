@@ -3,7 +3,7 @@
     background-image: url("../images/t-screen-o4.jpg");
     background-size: cover;
     height: 100vh;
-    position: center center relative;
+    position: relative;
 }
 .title-content{
     position: absolute;
@@ -101,4 +101,12 @@ h3{
 #dyn5{
     height: 5rem;
     border-radius: 10px;
+}
+.losing-screen-text{
+    font-family: 'Pirata One', cursive;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+
 }

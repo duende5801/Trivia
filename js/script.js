@@ -3,6 +3,7 @@ let inject = document.getElementById('inject');
 let triviaEZ = [];
 let triviaHD = [];
 let triviaMD = [];
+let triviaQ = [];
 let difficulty = 0;
 let totalQuestions = 20;
 
@@ -73,24 +74,12 @@ loadJSON("../data/datahd.json");
 window.onload = loadHTML("../injections/title_page.html");
 
 
-function titleLoad(info) {
-    inject.innerHTML = info;
-    let g2Menu = document.getElementById('g2Menu');
-
-    //Inject from TITLE screen to MENU screen
-    g2Menu.addEventListener('click', function (e) {
-        //call loadHTML to inject HTML
-        loadHTML("../injections/menu_screen.html");
-    });
-}
-
-
 
 function loadHTML(url) {
     //XML HTTP-REQUEST
-
+    
     let xmlhttp = new XMLHttpRequest();
-
+    
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let myArr = this.responseText;//JSON.parse(this.responseText);
@@ -106,6 +95,9 @@ function loadHTML(url) {
                 } else if (difficulty === 3) {
                     gameScreenLoad(myArr, triviaHD);
                 }
+                else if (difficulty === 4){
+                    gameScreenLoad(myArr, triviaQ);
+                }
             }
             else if (url === "../injections/options_screen.html") {
                 optionsScreenLoad(myArr);
@@ -119,13 +111,24 @@ function loadHTML(url) {
             else if (url === "../injections/title_page.html") {
                 titleLoad(myArr)
             }
-
+            
         }
     };
     //Opening the connection
     xmlhttp.open("GET", url, true);
     //Sending the request
     xmlhttp.send();
+}
+
+function titleLoad(info) {
+    inject.innerHTML = info;
+    let g2Menu = document.getElementById('g2Menu');
+
+    //Inject from TITLE screen to MENU screen
+    g2Menu.addEventListener('click', function (e) {
+        //call loadHTML to inject HTML
+        loadHTML("../injections/menu_screen.html");
+    });
 }
 
 function menuScreenLoad(info) {
@@ -189,7 +192,6 @@ function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
     let count = 0;
     let scoreCheck = 0;
-    let triviaQ = [];
     let triviaTimer = 20;
     let newTimer = setInterval(checkTime, 1000);
 
@@ -234,7 +236,11 @@ function gameScreenLoad(info, arr) {
         console.log(triviaQ);
     }
 
-    funcRandom();
+    //this will randomize if the triviaQ if difficulty is not 4
+    if(difficulty === 1 || difficulty === 2 || difficulty === 3){
+        triviaQ = [];
+        funcRandom();
+    }
 
 
     //This is the function that displays all questions and answers located in json files
@@ -411,7 +417,9 @@ function gameScreenLoad(info, arr) {
     });
 }
 
+
 function gameOverScreenLoad(info) {
+    //this screen loads when the game has been won
     inject.innerHTML = info;
     let toTitle = document.getElementById('toTitle');
 
@@ -419,7 +427,22 @@ function gameOverScreenLoad(info) {
         loadHTML("../injections/title_page.html");
     })
 }
+
+
 function gameLoseScreenLoad(info) {
+    //this screen loads when the game has been lost
     inject.innerHTML = info;
+
+    let toTitle = document.getElementById('lostScreenToTitle');
+    let replayGame = document.getElementById('replayGame');
+
+    toTitle.addEventListener('click', function (e) {
+        loadHTML("../injections/title_page.html");
+    });
+    
+    replayGame.addEventListener('click', function(e){
+        difficulty = 4;
+        loadHTML("../injections/game_screen.html")
+    })
 }
 
