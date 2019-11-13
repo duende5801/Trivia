@@ -257,44 +257,44 @@ function gameScreenLoad(info, arr) {
     }
 
     a1.addEventListener('click', function () {
-        checkAnswer(a1.innerText);
         //this changes the color of the buttons weather it is right or wrong
         //would like to use this feature in the checkAnswer function since it is a repetitive function
         //btn-success is bootstrap and makes the btn=green btn-danger makes the btn=red
         if(a1.innerText === triviaQ[count].c){
             a1.className = "btn btn-success btn-lg btn-block";
         }
+        
         else{
             a1.className = "btn btn-danger btn-lg btn-block";
         }
+        checkAnswer(a1.innerText);
     });
     a2.addEventListener('click', function () {
-        checkAnswer(a2.innerText);
         if(a2.innerText === triviaQ[count].c){
             a2.className = "btn btn-success btn-lg btn-block";
         }
         else{
             a2.className = "btn btn-danger btn-lg btn-block";
         }
+        checkAnswer(a2.innerText);
     });
     a3.addEventListener('click', function () {
-        checkAnswer(a3.innerText);
         if(a3.innerText === triviaQ[count].c){
             a3.className = "btn btn-success btn-lg btn-block";
         }
         else{
             a3.className = "btn btn-danger btn-lg btn-block";
         }
-
+        checkAnswer(a3.innerText);
     });
     a4.addEventListener('click', function () {
-        checkAnswer(a4.innerText);
         if(a4.innerText === triviaQ[count].c){
             a4.className = "btn btn-success btn-lg btn-block";
         }
         else{
             a4.className = "btn btn-danger btn-lg btn-block";
         }
+        checkAnswer(a4.innerText);
     });
 
 
@@ -305,6 +305,7 @@ function gameScreenLoad(info, arr) {
         if (string === triviaQ[count].c) {
             score.innerText++;
             scoreCheck++;
+            
             triviaTimer = 20;
             count++;
         }
