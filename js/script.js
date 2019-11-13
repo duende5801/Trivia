@@ -47,7 +47,7 @@ function loadJSON(url) {
                     "c": arr[i].c
                 }
                 triviaMD.push(nFO);
-                console.log(triviaEZ.q)
+                console.log(triviaMD.q)
             };
         }
         else if (url === "../data/datahd.json") {
@@ -61,7 +61,7 @@ function loadJSON(url) {
                     "c": arr[i].c
                 }
                 triviaHD.push(nFO);
-                console.log(triviaEZ.q)
+                console.log(triviaHD.q)
             };
         }
     };
@@ -70,6 +70,7 @@ function loadJSON(url) {
 loadJSON("../data/data.json");
 loadJSON("../data/datamd.json");
 loadJSON("../data/datahd.json");
+window.onload = loadHTML("../injections/title_page.html");
 
 
 function titleLoad(info) {
@@ -78,12 +79,11 @@ function titleLoad(info) {
 
     //Inject from TITLE screen to MENU screen
     g2Menu.addEventListener('click', function (e) {
-        //call loadJSON to inject HTML
+        //call loadHTML to inject HTML
         loadHTML("../injections/menu_screen.html");
     });
 }
 
-window.onload = loadHTML("../injections/title_page.html");
 
 
 function loadHTML(url) {
@@ -168,11 +168,11 @@ function optionsScreenLoad(info) {
 
     music.addEventListener('click', function () {
 
-        if (firstClicked){
+        if (firstClicked) {
             audio.play();
-            firstClicked=false;
+            firstClicked = false;
         }
-        else{
+        else {
             audio.pause();
             audio.currentTime = 0;
             firstClicked = true;
@@ -188,9 +188,10 @@ function optionsScreenLoad(info) {
 function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
     let count = 0;
-    let cannonNum = 5;
-    let dynomite = 5;
     let scoreCheck = 0;
+    let triviaQ = [];
+    let triviaTimer = 20;
+    let newTimer = setInterval(checkTime, 1000);
 
     //add in elements and event listeners
     //Grab all the buttons
@@ -199,7 +200,6 @@ function gameScreenLoad(info, arr) {
     let a3 = document.getElementById('a3');
     let a4 = document.getElementById('a4');
     let score = document.getElementById('score');
-    let cannonballs = document.getElementById('cannonballs');
     let dynBtn = document.getElementsByClassName('dynBtn');
     let dyn1 = document.getElementById('dyn1');
     let dyn2 = document.getElementById('dyn2');
@@ -209,32 +209,36 @@ function gameScreenLoad(info, arr) {
 
     // Grab Class By Name
     // Returns an Array of HTML Elements
-    let btns = document.getElementsByClassName('ansBtn');
+    let ansBtn = document.getElementsByClassName('ansBtn');
     let q = document.getElementById('qL');
     let counter = document.getElementById('counter');
 
 
+    //gives the user a little time to react to right or wrong answer
     setTimeout(displayQuestion, 500);
-    let newTimer = setInterval(checkTime, 1000);
 
-    let triviaQ = [];
+
     //create an array of random questions
+    //Random array 'triviaQ' is a global variable up top
     function funcRandom() {
         let qNum = 0;
         for (let i = 0; i < totalQuestions; i++) {
             //we are going to shuffle
+            //arr comes from the loadJson function
             qNum = Math.floor(Math.random() * arr.length);
             //add from ezQ jsonarray to triviaQ
             triviaQ.push(arr[qNum]);
             //remove the item from ezQ
             arr.splice(qNum, 1);
         }
-
+        console.log(triviaQ);
     }
-    console.log(triviaQ);
 
     funcRandom();
 
+
+    //This is the function that displays all questions and answers located in json files
+    //look at above fuction to see where array came from
     function displayQuestion() {
         //Fill in out Buttons
         a1.style.display = "block";
@@ -250,36 +254,50 @@ function gameScreenLoad(info, arr) {
 
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
-        //checkGameOver();
     })
     a2.addEventListener('click', function () {
         checkAnswer(a2.innerText);
-        //checkGameOver();
 
     })
     a3.addEventListener('click', function () {
         checkAnswer(a3.innerText);
-        //checkGameOver();
 
     })
     a4.addEventListener('click', function () {
         checkAnswer(a4.innerText);
-        //checkGameOver();
-
     })
+
+
+    //checkAnswer is the function cycles through the array
+    // as well as checks for the end of the game and keep score
+    //these are the actions need to happen after a user click
     function checkAnswer(string) {
         if (string === triviaQ[count].c) {
             score.innerText++;
             scoreCheck++;
+            greenGood();
             triviaTimer = 20;
             count++;
         }
         else {
+            redBad();
             triviaTimer = 20;
             count++;
         }
+        //buttons turn a color based on wrong or right answer
+        function greenGood() {
+            ansBtn.className = "correctAnsBtns";
+        }
+        function redBad() {
+            ansBtn.className = "incorrectAnsBtns";
+        }
+
+        //this is the function that checks if the game is over or still going
+        //the function also injects a new page after the game is over
         setTimeout(() => {
             if (count > 19 && scoreCheck > 13) {
+                //going to a new screen and need timer to stop
+                //clearInterval to stop timer
                 clearInterval(newTimer);
                 loadHTML("../injections/game_over_screen.html")
             }
@@ -290,27 +308,34 @@ function gameScreenLoad(info, arr) {
             else {
                 displayQuestion();
             }
+            //arrow function, anonymous function allowing me to delay the action going on by .5 secs
         }, 500);
 
     }
 
-    // Run our Counter / Timer
-    // Create our Max Time
-    let triviaTimer = 20;
-    //setInterval(checkTime, 1000);
 
+    // Run our Counter / Timer 
+
+    // Create our Max Time
+    // Max Time global variable up top
     function checkTime() {
         if (triviaTimer !== 0) {
             counter.innerText = triviaTimer--;
 
         }
+        //run checkAnswer to cycle through question array
         else if (triviaTimer === 0) {
             checkAnswer();
             triviaTimer = 20;
         }
     }
 
-    dyn1.addEventListener('click', function (e){
+
+    //add listener to all 5 dynomite
+    //this is the extra feature that gets rid of all wrong answers for a question.
+
+    //adding a function for the repetitve portion of the listeners
+    function extraFeature() {
         if (a1.innerText !== triviaQ[count].c) {
             a1.style.display = "none";
         }
@@ -323,70 +348,30 @@ function gameScreenLoad(info, arr) {
         if (a4.innerText !== triviaQ[count].c) {
             a4.style.display = "none";
         }
+    }
+
+    dyn1.addEventListener('click', function (e) {
+        extraFeature();
         dyn1.className = "d-none";
         dyn2.className = "d-block";
     });
-    dyn2.addEventListener('click', function (e){
-        if (a1.innerText !== triviaQ[count].c) {
-            a1.style.display = "none";
-        }
-        if (a2.innerText !== triviaQ[count].c) {
-            a2.style.display = "none";
-        }
-        if (a3.innerText !== triviaQ[count].c) {
-            a3.style.display = "none";
-        }
-        if (a4.innerText !== triviaQ[count].c) {
-            a4.style.display = "none";
-        }
+    dyn2.addEventListener('click', function (e) {
+        extraFeature();
         dyn2.className = "d-none";
         dyn3.className = "d-block";
     });
-    dyn3.addEventListener('click', function (e){
-        if (a1.innerText !== triviaQ[count].c) {
-            a1.style.display = "none";
-        }
-        if (a2.innerText !== triviaQ[count].c) {
-            a2.style.display = "none";
-        }
-        if (a3.innerText !== triviaQ[count].c) {
-            a3.style.display = "none";
-        }
-        if (a4.innerText !== triviaQ[count].c) {
-            a4.style.display = "none";
-        }
+    dyn3.addEventListener('click', function (e) {
+        extraFeature();
         dyn3.className = "d-none";
         dyn4.className = "d-block";
     });
-    dyn4.addEventListener('click', function (e){
-        if (a1.innerText !== triviaQ[count].c) {
-            a1.style.display = "none";
-        }
-        if (a2.innerText !== triviaQ[count].c) {
-            a2.style.display = "none";
-        }
-        if (a3.innerText !== triviaQ[count].c) {
-            a3.style.display = "none";
-        }
-        if (a4.innerText !== triviaQ[count].c) {
-            a4.style.display = "none";
-        }
+    dyn4.addEventListener('click', function (e) {
+        extraFeature();
         dyn4.className = "d-none";
         dyn5.className = "d-block";
     });
-    dyn5.addEventListener('click', function (e){
-        if (a1.innerText !== triviaQ[count].c) {
-            a1.style.display = "none";
-        }
-        if (a2.innerText !== triviaQ[count].c) {
-            a2.style.display = "none";
-        }
-        if (a3.innerText !== triviaQ[count].c) {
-            a3.style.display = "none";
-        }
-        if (a4.innerText !== triviaQ[count].c) {
-            a4.style.display = "none";
-        }
+    dyn5.addEventListener('click', function (e) {
+        extraFeature();
         dyn5.className = "d-none";
     });
 }
