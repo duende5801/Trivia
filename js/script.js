@@ -384,7 +384,6 @@ function gameScreenLoad(info, arr) {
         }
         dyn5.style.display = "none";
     });
-
 }
 
 function gameOverScreenLoad(info) {
