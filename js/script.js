@@ -189,6 +189,7 @@ function gameScreenLoad(info, arr) {
     inject.innerHTML = info;
     let count = 0;
     let cannonNum = 5;
+    let dynomite = 5;
     let scoreCheck = 0;
 
     //add in elements and event listeners
@@ -322,7 +323,8 @@ function gameScreenLoad(info, arr) {
         if (a4.innerText !== triviaQ[count].c) {
             a4.style.display = "none";
         }
-        dyn1.style.display = "none";
+        dyn1.className = "d-none";
+        dyn2.className = "d-block";
     });
     dyn2.addEventListener('click', function (e){
         if (a1.innerText !== triviaQ[count].c) {
@@ -337,7 +339,8 @@ function gameScreenLoad(info, arr) {
         if (a4.innerText !== triviaQ[count].c) {
             a4.style.display = "none";
         }
-        dyn2.style.display = "none";
+        dyn2.className = "d-none";
+        dyn3.className = "d-block";
     });
     dyn3.addEventListener('click', function (e){
         if (a1.innerText !== triviaQ[count].c) {
@@ -352,7 +355,8 @@ function gameScreenLoad(info, arr) {
         if (a4.innerText !== triviaQ[count].c) {
             a4.style.display = "none";
         }
-        dyn3.style.display = "none";
+        dyn3.className = "d-none";
+        dyn4.className = "d-block";
     });
     dyn4.addEventListener('click', function (e){
         if (a1.innerText !== triviaQ[count].c) {
@@ -367,7 +371,8 @@ function gameScreenLoad(info, arr) {
         if (a4.innerText !== triviaQ[count].c) {
             a4.style.display = "none";
         }
-        dyn4.style.display = "none";
+        dyn4.className = "d-none";
+        dyn5.className = "d-block";
     });
     dyn5.addEventListener('click', function (e){
         if (a1.innerText !== triviaQ[count].c) {
@@ -382,7 +387,7 @@ function gameScreenLoad(info, arr) {
         if (a4.innerText !== triviaQ[count].c) {
             a4.style.display = "none";
         }
-        dyn5.style.display = "none";
+        dyn5.className = "d-none";
     });
 }
 

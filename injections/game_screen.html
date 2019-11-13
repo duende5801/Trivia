@@ -1,60 +1,46 @@
-    <div class="container-fluid background-game-screen">
-        <div class="row">
-            <div class="col d-flex justify-content-start py-5">
-                <h2>
-                    Time: <span id="counter"></span>
-                </h2>
-            </div>
-            <div class="col d-flex justify-content-center py-5">
-                <span class="cannonText d-flex align-items-center px-0">Dynamite:</span>
-            </div>
-            <div class="col py-5">
-                <div class="row no-padding">
-                    <div class="col">
-                        <img id="dyn1" class="img-fluid dynBtn" src="images/dynamite.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img id="dyn2" class="img-fluid dynBtn" src="images/dynamite.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img id="dyn3" class="img-fluid dynBtn" src="images/dynamite.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img id="dyn4" class="img-fluid dynBtn" src="images/dynamite.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img id="dyn5" class="img-fluid dynBtn" src="images/dynamite.png" alt="">
-                    </div>
-                </div>
-            </div>
+<div class="container-fluid background-game-screen">
+    <div class="row">
+        <div class="col d-flex justify-content-start py-5">
+            <h2>
+                Time: <span id="counter"></span>
+            </h2>
+        </div>
+        <div class="col d-flex justify-content-center py-5">
+            <span class="cannonText d-flex align-items-center px-0">Dynamite:</span>
+            <img id="dyn1" class="img-fluid dynBtn" src="../images/dynamite5.png" alt="">
+            <img id="dyn2" class="img-fluid dynBtn d-none" src="../images/dynamite4.png" alt="">
+            <img id="dyn3" class="img-fluid dynBtn d-none" src="../images/dynamite3.png" alt="">
+            <img id="dyn4" class="img-fluid dynBtn d-none" src="../images/dynamite2.png" alt="">
+            <img id="dyn5" class="img-fluid dynBtn d-none" src="../images/dynamite1.png" alt="">
+        </div>
 
-            <div class="col d-flex justify-content-end py-5">
-                <h2>
-                    Score: <span id="score">0</span>
-                </h2>
-            </div>
+        <div class="col d-flex justify-content-end py-5">
+            <h2>
+                Score: <span id="score">0</span>
+            </h2>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 d-flex justify-content-center text-center">
+            <h1 id="qL">Questions go here</h1>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="container my-5">
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8 d-flex justify-content-center text-center">
-                <h1 id="qL">Questions go here</h1>
+            <div class="col-6 my-2">
+                <button type="button" id="a1" class="btn btn-primary btn-lg btn-block ansBtn">Answer A</button>
             </div>
-            <div class="col-2"></div>
-        </div>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-6 my-2">
-                    <button type="button" id="a1" class="btn btn-primary btn-lg btn-block ansBtn">Answer A</button>
-                </div>
-                <div class="col-6 my-2">
-                    <button type="button" id="a2" class="btn btn-primary btn-lg btn-block ansBtn">Answer B</button>
-                </div>
-                <div class="col-6 my-2">
-                    <button type="button" id="a3" class="btn btn-primary btn-lg btn-block ansBtn">Answer C</button>
-                </div>
-                <div class="col-6 my-2">
-                    <button type="button" id="a4" class="btn btn-primary btn-lg btn-block ansBtn">Answer D</button>
-                </div>
+            <div class="col-6 my-2">
+                <button type="button" id="a2" class="btn btn-primary btn-lg btn-block ansBtn">Answer B</button>
+            </div>
+            <div class="col-6 my-2">
+                <button type="button" id="a3" class="btn btn-primary btn-lg btn-block ansBtn">Answer C</button>
+            </div>
+            <div class="col-6 my-2">
+                <button type="button" id="a4" class="btn btn-primary btn-lg btn-block ansBtn">Answer D</button>
             </div>
         </div>
     </div>
+</div>

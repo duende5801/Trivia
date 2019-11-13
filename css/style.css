@@ -86,6 +86,25 @@ h3{
     letter-spacing: 5px;
     color: white;
 }
-.no-padding .col {
-    padding : 0;
+
+#dyn1{
+    height: 5rem;
+    border-radius: 10px;
+}
+
+#dyn2{
+    height: 5rem;
+    border-radius: 10px;
+}
+#dyn3{
+    height: 5rem;
+    border-radius: 10px;
+}
+#dyn4{
+    height: 5rem;
+    border-radius: 10px;
+}
+#dyn5{
+    height: 5rem;
+    border-radius: 10px;
 }
