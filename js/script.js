@@ -269,7 +269,6 @@ function gameScreenLoad(info, arr) {
         if(a1.innerText === triviaQ[count].c){
             a1.className = "btn btn-success btn-lg btn-block";
         }
-        
         else{
             a1.className = "btn btn-danger btn-lg btn-block";
         }
@@ -311,7 +310,6 @@ function gameScreenLoad(info, arr) {
         if (string === triviaQ[count].c) {
             score.innerText++;
             scoreCheck++;
-            
             triviaTimer = 20;
             count++;
         }
