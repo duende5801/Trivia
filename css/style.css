@@ -28,12 +28,6 @@
     top: 30px;
     left: 20px;
 }
-.incorrectAnsBtns{
-    background-color: #f44336;
-}
-.correctAnsBtns{
-    background-color: #4CAF50;
-}
  
 h1{
     font-family: 'Pirata One', cursive;

@@ -195,6 +195,7 @@ function gameScreenLoad(info, arr) {
 
     //add in elements and event listeners
     //Grab all the buttons
+    let q = document.getElementById('qL');
     let a1 = document.getElementById('a1');
     let a2 = document.getElementById('a2');
     let a3 = document.getElementById('a3');
@@ -206,12 +207,11 @@ function gameScreenLoad(info, arr) {
     let dyn3 = document.getElementById('dyn3');
     let dyn4 = document.getElementById('dyn4');
     let dyn5 = document.getElementById('dyn5');
+    let counter = document.getElementById('counter');
 
     // Grab Class By Name
     // Returns an Array of HTML Elements
     let ansBtn = document.getElementsByClassName('ansBtn');
-    let q = document.getElementById('qL');
-    let counter = document.getElementById('counter');
 
 
     //gives the user a little time to react to right or wrong answer
@@ -245,6 +245,10 @@ function gameScreenLoad(info, arr) {
         a2.style.display = "block";
         a3.style.display = "block";
         a4.style.display = "block";
+        a1.className = "btn btn-primary btn-lg btn-block";
+        a2.className = "btn btn-primary btn-lg btn-block";
+        a3.className = "btn btn-primary btn-lg btn-block";
+        a4.className = "btn btn-primary btn-lg btn-block";
         q.innerText = triviaQ[count].q;
         a1.innerText = triviaQ[count].a1;
         a2.innerText = triviaQ[count].a2;
@@ -254,18 +258,44 @@ function gameScreenLoad(info, arr) {
 
     a1.addEventListener('click', function () {
         checkAnswer(a1.innerText);
-    })
+        //this changes the color of the buttons weather it is right or wrong
+        //would like to use this feature in the checkAnswer function since it is a repetitive function
+        //btn-success is bootstrap and makes the btn=green btn-danger makes the btn=red
+        if(a1.innerText === triviaQ[count].c){
+            a1.className = "btn btn-success btn-lg btn-block";
+        }
+        else{
+            a1.className = "btn btn-danger btn-lg btn-block";
+        }
+    });
     a2.addEventListener('click', function () {
         checkAnswer(a2.innerText);
-
-    })
+        if(a2.innerText === triviaQ[count].c){
+            a2.className = "btn btn-success btn-lg btn-block";
+        }
+        else{
+            a2.className = "btn btn-danger btn-lg btn-block";
+        }
+    });
     a3.addEventListener('click', function () {
         checkAnswer(a3.innerText);
+        if(a3.innerText === triviaQ[count].c){
+            a3.className = "btn btn-success btn-lg btn-block";
+        }
+        else{
+            a3.className = "btn btn-danger btn-lg btn-block";
+        }
 
-    })
+    });
     a4.addEventListener('click', function () {
         checkAnswer(a4.innerText);
-    })
+        if(a4.innerText === triviaQ[count].c){
+            a4.className = "btn btn-success btn-lg btn-block";
+        }
+        else{
+            a4.className = "btn btn-danger btn-lg btn-block";
+        }
+    });
 
 
     //checkAnswer is the function cycles through the array
@@ -275,22 +305,14 @@ function gameScreenLoad(info, arr) {
         if (string === triviaQ[count].c) {
             score.innerText++;
             scoreCheck++;
-            greenGood();
             triviaTimer = 20;
             count++;
         }
         else {
-            redBad();
             triviaTimer = 20;
             count++;
         }
-        //buttons turn a color based on wrong or right answer
-        function greenGood() {
-            ansBtn.className = "correctAnsBtns";
-        }
-        function redBad() {
-            ansBtn.className = "incorrectAnsBtns";
-        }
+
 
         //this is the function that checks if the game is over or still going
         //the function also injects a new page after the game is over
@@ -336,16 +358,28 @@ function gameScreenLoad(info, arr) {
 
     //adding a function for the repetitve portion of the listeners
     function extraFeature() {
-        if (a1.innerText !== triviaQ[count].c) {
+        if (a1.innerText !== triviaQ[count].c && a2.innerText !== triviaQ[count].c) {
             a1.style.display = "none";
-        }
-        if (a2.innerText !== triviaQ[count].c) {
             a2.style.display = "none";
         }
-        if (a3.innerText !== triviaQ[count].c) {
+        else if (a1.innerText !== triviaQ[count].c && a3.innerText !== triviaQ[count].c) {
+            a1.style.display = "none";
             a3.style.display = "none";
         }
-        if (a4.innerText !== triviaQ[count].c) {
+        else if (a1.innerText !== triviaQ[count].c && a4.innerText !== triviaQ[count].c) {
+            a1.style.display = "none";
+            a4.style.display = "none";
+        }
+        else if (a2.innerText !== triviaQ[count].c && a3.innerText !== triviaQ[count].c) {
+            a2.style.display = "none";
+            a3.style.display = "none";
+        }
+        else if (a2.innerText !== triviaQ[count].c && a4.innerText !== triviaQ[count].c) {
+            a2.style.display = "none";
+            a4.style.display = "none";
+        }
+        else if (a3.innerText !== triviaQ[count].c && a4.innerText !== triviaQ[count].c) {
+            a3.style.display = "none";
             a4.style.display = "none";
         }
     }
