@@ -5,7 +5,9 @@ let triviaHD = [];
 let triviaMD = [];
 let triviaQ = [];
 let difficulty = 0;
+let globalScoreText = 0;
 let totalQuestions = 20;
+let audio = new Audio('../sound/song.mp3');
 
 function loadJSON(url) {
     //load our JSON Data
@@ -72,6 +74,7 @@ loadJSON("../data/data.json");
 loadJSON("../data/datamd.json");
 loadJSON("../data/datahd.json");
 window.onload = loadHTML("../injections/title_page.html");
+window.onload = audio.play();
 
 
 
@@ -165,7 +168,6 @@ function optionsScreenLoad(info) {
 
     let music = document.getElementById('music');
     let back = document.getElementById('back');
-    let audio = new Audio('../sound/song.mp3');
     let firstClicked = true;
 
 
@@ -203,7 +205,6 @@ function gameScreenLoad(info, arr) {
     let a3 = document.getElementById('a3');
     let a4 = document.getElementById('a4');
     let score = document.getElementById('score');
-    let dynBtn = document.getElementsByClassName('dynBtn');
     let dyn1 = document.getElementById('dyn1');
     let dyn2 = document.getElementById('dyn2');
     let dyn3 = document.getElementById('dyn3');
@@ -213,7 +214,6 @@ function gameScreenLoad(info, arr) {
 
     // Grab Class By Name
     // Returns an Array of HTML Elements
-    let ansBtn = document.getElementsByClassName('ansBtn');
 
 
     //gives the user a little time to react to right or wrong answer
@@ -262,6 +262,23 @@ function gameScreenLoad(info, arr) {
         a4.innerText = triviaQ[count].a4;
     }
 
+    //this function will always show the correct answer using the btn-success
+    function greenGood(){
+        if(a1.innerText === triviaQ[count].c){
+            a1.className = "btn btn-success btn-lg btn-block";
+        }
+        else if(a2.innerText === triviaQ[count].c){
+            a2.className = "btn btn-success btn-lg btn-block";
+        }
+        else if(a3.innerText === triviaQ[count].c){
+            a3.className = "btn btn-success btn-lg btn-block";
+        }
+        else if(a4.innerText === triviaQ[count].c){
+            a4.className = "btn btn-success btn-lg btn-block";
+        }
+
+    }
+
     a1.addEventListener('click', function () {
         //this changes the color of the buttons weather it is right or wrong
         //would like to use this feature in the checkAnswer function since it is a repetitive function
@@ -270,6 +287,7 @@ function gameScreenLoad(info, arr) {
             a1.className = "btn btn-success btn-lg btn-block";
         }
         else{
+            greenGood();
             a1.className = "btn btn-danger btn-lg btn-block";
         }
         checkAnswer(a1.innerText);
@@ -279,6 +297,7 @@ function gameScreenLoad(info, arr) {
             a2.className = "btn btn-success btn-lg btn-block";
         }
         else{
+            greenGood();
             a2.className = "btn btn-danger btn-lg btn-block";
         }
         checkAnswer(a2.innerText);
@@ -288,6 +307,7 @@ function gameScreenLoad(info, arr) {
             a3.className = "btn btn-success btn-lg btn-block";
         }
         else{
+            greenGood();
             a3.className = "btn btn-danger btn-lg btn-block";
         }
         checkAnswer(a3.innerText);
@@ -297,6 +317,7 @@ function gameScreenLoad(info, arr) {
             a4.className = "btn btn-success btn-lg btn-block";
         }
         else{
+            greenGood();
             a4.className = "btn btn-danger btn-lg btn-block";
         }
         checkAnswer(a4.innerText);
@@ -325,11 +346,13 @@ function gameScreenLoad(info, arr) {
             if (count > 19 && scoreCheck > 13) {
                 //going to a new screen and need timer to stop
                 //clearInterval to stop timer
+                globalScoreText = scoreCheck;
                 clearInterval(newTimer);
                 loadHTML("../injections/game_over_screen.html")
             }
             else if (count > 19 && scoreCheck <= 13) {
                 clearInterval(newTimer);
+                globalScoreText = scoreCheck;
                 loadHTML("../injections/lose_game_over_screen.html")
             }
             else {
@@ -419,7 +442,9 @@ function gameScreenLoad(info, arr) {
 function gameOverScreenLoad(info) {
     //this screen loads when the game has been won
     inject.innerHTML = info;
-    let toTitle = document.getElementById('toTitle');
+    let endGameScore = document.getElementById('globalScore')
+    endGameScore.innerText = globalScoreText;
+
 
     toTitle.addEventListener('click', function (e) {
         loadHTML("../injections/title_page.html");
@@ -433,6 +458,8 @@ function gameLoseScreenLoad(info) {
 
     let toTitle = document.getElementById('lostScreenToTitle');
     let replayGame = document.getElementById('replayGame');
+    let endGameScore = document.getElementById('globalScore')
+    endGameScore.innerText = globalScoreText;
 
     toTitle.addEventListener('click', function (e) {
         loadHTML("../injections/title_page.html");

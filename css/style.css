@@ -3,6 +3,7 @@
     background-image: url("../images/t-screen-o4.jpg");
     background-size: cover;
     height: 100vh;
+    background-position: center center;
     position: relative;
 }
 .title-content{
@@ -13,7 +14,7 @@
 }
 .title-btn{
     position: absolute;
-    top: 95px;
+    top: 200px;
     right: 20px;
 }
 
@@ -21,19 +22,21 @@
     background-image: url("../images/options-screen.jpg");
     background-size: cover;
     height: 100vh;
+    background-position: center center;
     position: relative;
 }
 .go-back{
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 75px;
+    right: 30px;
 }
  
 h1{
     font-family: 'Pirata One', cursive;
     font-weight: bolder;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px #FF0000;
+    
 }
 h2{
     color: white;
@@ -48,8 +51,9 @@ h3{
     font-size: x-large;
 }
 #qL{
-    color: white;
-    font-family: 'Pirata One', cursive;
+    font-family: 'Righteous', cursive;
+    color: #ff9900;
+    text-shadow: 2px 2px 8px #FF0000;
 }
 .modal-body{
     font-family: 'Pirata One', cursive;
@@ -60,18 +64,20 @@ h3{
     background-image: url(../images/win-screen.jpg);
     background-size: cover;
     height: 100vh;
+    background-position: center center;
 }
 .background-lose{
-    background-image: url(../images/one-eyed-willie.jpg);
+    background-image: url(../images/one-eyed-willy.jpg);
     height: 100vh;
     background-position: center center;
     background-size: cover;
 }
 
 .background-game-screen{
-    background-image: url(../images/maxresdefault.jpg);
+    background-image: url(../images/game-screen-o3.jpg);
     height: 100vh;
     background-size: cover;
+    background-position: top center;
 }
 
 .cannonText{
@@ -105,8 +111,13 @@ h3{
 .losing-screen-text{
     font-family: 'Pirata One', cursive;
     font-weight: bolder;
-    text-transform: uppercase;
     letter-spacing: 5px;
-    color: white;
-
+    color: black;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+.maroon{
+    color: maroon;
+}
+.gameOverSize{
+    font-size: 8rem;
 }
