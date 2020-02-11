@@ -7,7 +7,7 @@ let triviaQ = [];
 let difficulty = 0;
 let globalScoreText = 0;
 let totalQuestions = 20;
-let audio = new Audio('../sound/song.mp3');
+let audio = new Audio('./sound/song.mp3');
 
 function loadJSON(url) {
     //load our JSON Data
